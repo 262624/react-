@@ -1,0 +1,2071 @@
+{
+    "components": {
+        "AccountAddressBookBottomSheet": {
+            "index": {
+                "title": "账户中的地址"
+            }
+        },
+        "AddressBookBottomSheet": {
+            "index": {
+                "addAddressButton": "添加地址",
+                "title": "地址簿"
+            }
+        },
+        "AddressBookItem": {
+            "ManagePopover": {
+                "EditDialog": {
+                    "index": {
+                        "addressPlaceholder": "地址",
+                        "labelPlaceholder": "标签",
+                        "memoPlaceholder": "备注（可选）",
+                        "submit": "编辑",
+                        "title": "编辑地址"
+                    }
+                },
+                "index": {
+                    "delete": "删除",
+                    "deleteSnackbar": "您的地址已删除",
+                    "edit": "编辑"
+                }
+            }
+        },
+        "Fee": {
+            "components": {
+                "FeeSettingDialog": {
+                    "index": {
+                        "feeSettings": "选择交易费用"
+                    }
+                },
+                "GasSettingDialog": {
+                    "index": {
+                        "gasSettings": "Gas 设置",
+                        "submitButton": "提交"
+                    }
+                }
+            },
+            "index": {
+                "average": "平均",
+                "fee": "费用",
+                "gasSettings": "Gas 设置",
+                "low": "低",
+                "tiny": "极低"
+            }
+        },
+        "Header": {
+            "Drawer": {
+                "index": {
+                    "addCustomChain": "添加自定义链",
+                    "addressBook": "地址簿",
+                    "changePassword": "更改密码",
+                    "connectedSites": "已连接的站点",
+                    "currency": "货币",
+                    "darkMode": "深色模式",
+                    "expand": "扩展视图",
+                    "guide": "指南",
+                    "helpSupport": "帮助与支持",
+                    "language": "语言",
+                    "ledger": "Ledger",
+                    "lock": "锁定",
+                    "provider": "优先级"
+                }
+            }
+        },
+        "Loading": {
+            "LedgerToTab": {
+                "index": {
+                    "cancel": "取消",
+                    "continue": "继续",
+                    "description": "请在浏览器选项卡中完成此过程"
+                }
+            }
+        },
+        "Lock": {
+            "LostDialog": {
+                "index": {
+                    "description": "如果丢失了密码：备份助记词，删除 Cosmostation 浏览器扩展程序，然后重新安装。（当前导入的钱包将会断开连接）",
+                    "title": "保存您的助记词！"
+                }
+            },
+            "index": {
+                "lostButton": "我丢失了我的密码",
+                "passwordPlaceholder": "密码",
+                "unlockButton": "解锁"
+            }
+        },
+        "ethereum": {
+            "Fee": {
+                "index": {
+                    "average": "平均",
+                    "fee": "最大费用",
+                    "gasSettings": "Gas 设置",
+                    "low": "低",
+                    "tiny": "极低"
+                }
+            }
+        },
+        "requests": {
+            "AccessRequest": {
+                "index": {
+                    "downDescription": "通过批准此请求，网站将：",
+                    "downItem1": "知道您的钱包地址",
+                    "downItem2": "请求签名交易",
+                    "downItem3": "加密/解密消息",
+                    "upDescription1": "正在",
+                    "upDescription2": "请求连接到您的",
+                    "upDescription3": " 账户"
+                }
+            },
+            "ActivateChainRequest": {
+                "index": {
+                    "description1": "您是否要激活",
+                    "description2": "区块链",
+                    "description3": "到 Cosmostation？"
+                }
+            },
+            "LedgerPublicKeyRequest": {
+                "index": {
+                    "cancelButton": "取消",
+                    "completeButton": "完成",
+                    "step1Description": "解锁您的 Ledger",
+                    "step2Description1": "打开 ",
+                    "step2Description2": " 应用程序在 Ledger 上",
+                    "title": "连接 Ledger"
+                }
+            }
+        }
+    },
+    "pages": {
+        "Account": {
+            "Create": {
+                "Import": {
+                    "Mnemonic": {
+                        "entry": {
+                            "accountNamePlaceholder": "账户名称",
+                            "done": "完成",
+                            "hdPathSetting": "HD 路径设置",
+                            "mnemonicPlaceholder": "助记词"
+                        },
+                        "layout": {
+                            "title": "导入助记词"
+                        }
+                    }
+                },
+                "New": {
+                    "Ledger": {
+                        "entry": {
+                            "accountNamePlaceholder": "账户名称",
+                            "done": "完成",
+                            "guideButton": "Ledger 设置指南",
+                            "hdPathSetting": "HD 路径设置"
+                        },
+                        "layout": {
+                            "title": "创建新的 Ledger 账户"
+                        }
+                    },
+                    "Mnemonic": {
+                        "Step1": {
+                            "entry": {
+                                "description": "请输入账户名称。",
+                                "next": "下一步",
+                                "placeholder": "账户名称"
+                            },
+                            "layout": {
+                                "title": "创建新账户"
+                            }
+                        },
+                        "Step2": {
+                            "entry": {
+                                "12Words": "12 个单词",
+                                "24Words": "24 个单词",
+                                "copied": "已复制",
+                                "copy": "复制",
+                                "description": "这是恢复您账户的唯一方式。不要与任何人分享。丢失这些助记词可能会导致您资产的丢失。",
+                                "hdPathSetting": "HD 路径设置",
+                                "next": "下一步",
+                                "seedPhrase": "助记词"
+                            },
+                            "layout": {
+                                "title": "助记词"
+                            }
+                        },
+                        "Step3": {
+                            "entry": {
+                                "description": "请在下方输入您的助记词以确保您正确保存了助记词",
+                                "done": "完成"
+                            },
+                            "layout": {
+                                "title": "验证助记词"
+                            }
+                        }
+                    }
+                },
+                "entry": {
+                    "createAccount": "创建新账户",
+                    "createLedgerAccount": "创建新的 Ledger 账户",
+                    "importMnemonic": "导入助记词",
+                    "importPrivateKey": "导入私钥"
+                },
+                "layout": {
+                    "title": "添加账户"
+                }
+            },
+            "Initialize": {
+                "Complete": {
+                    "entry": {
+                        "description": "欢迎来到跨链生态系统。",
+                        "done": "完成",
+                        "title": "完成！"
+                    }
+                },
+                "Import": {
+                    "Mnemonic": {
+                        "entry": {
+                            "hdPathSetting": "HD 路径设置",
+                            "mnemonicPlaceholder": "助记词",
+                            "namePlaceholder": "账户名称",
+                            "next": "下一步"
+                        },
+                        "layout": {
+                            "title": "使用助记词恢复"
+                        }
+                    },
+                    "PrivateKey": {
+                        "entry": {
+                            "accountName": "账户名称",
+                            "next": "下一步",
+                            "privateKey": "要使用私钥恢复，请输入您的 Cosmostation 钱包私钥。（私钥是开头为 0x 的 66 位字符串）"
+                        },
+                        "layout": {
+                            "title": "使用私钥恢复"
+                        }
+                    },
+                    "Step2": {
+                        "entry": {
+                            "next": "下一步"
+                        },
+                        "layout": {
+                            "description": "选择要与 Cosmostation 钱包一起使用的链。",
+                            "title": "选择链"
+                        }
+                    },
+                    "Step3": {
+                        "layout": {
+                            "description": "请输入至少 8 个字符作为钱包密码。",
+                            "title": "创建密码"
+                        }
+                    },
+                    "entry": {
+                        "mnemonic": "使用助记词恢复",
+                        "privateKey": "使用私钥恢复"
+                    },
+                    "layout": {
+                        "title": "导入钱包"
+                    }
+                },
+                "New": {
+                    "Mnemonic": {
+                        "Step1": {
+                            "entry": {
+                                "next": "下一步",
+                                "placeholder": "账户名称"
+                            },
+                            "layout": {
+                                "description": "请输入账户名称。",
+                                "title": "账户名称"
+                            }
+                        },
+                        "Step2": {
+                            "entry": {
+                                "12Words": "12 个单词",
+                                "24Words": "24 个单词",
+                                "copied": "已复制",
+                                "copy": "复制",
+                                "hdPathSetting": "HD 路径设置",
+                                "next": "下一步",
+                                "seedPhrase": "助记词"
+                            },
+                            "layout": {
+                                "title": "助记词"
+                            }
+                        },
+                        "Step3": {
+                            "entry": {
+                                "next": "下一步"
+                            },
+                            "layout": {
+                                "description": "请在下方输入您的助记词。确保您安全地存储了助记词。",
+                                "title": "验证助记词"
+                            }
+                        },
+                        "Step4": {
+                            "entry": {
+                                "next": "下一步"
+                            },
+                            "layout": {
+                                "description": "选择要与 Cosmostation 钱包一起使用的链。",
+                                "title": "选择链"
+                            }
+                        },
+                        "Step5": {
+                            "layout": {
+                                "description": "请输入钱包密码",
+                                "title": "创建密码"
+                            }
+                        }
+                    }
+                },
+                "Welcome": {
+                    "entry": {
+                        "description1": "跨链和以太坊生态系统的网关",
+                        "description2": "Ethereum 生态系统",
+                        "permissionError": "权限请求被拒绝。请允许权限以使用钱包。",
+                        "startButton": "开始",
+                        "termsAgreement1": "我已经阅读并同意",
+                        "termsAgreement2": "使用条款",
+                        "title": "欢迎！"
+                    }
+                },
+                "components": {
+                    "Password": {
+                        "index": {
+                            "confirmPlaceholder": "确认密码",
+                            "newPlaceholder": "新密码",
+                            "next": "下一步"
+                        }
+                    },
+                    "SelectChain": {
+                        "index": {
+                            "placeholder": "搜索链",
+                            "removeAllowedChainError": "请选择至少一条链"
+                        }
+                    }
+                },
+                "entry": {
+                    "createWallet": "创建钱包",
+                    "importWallet": "导入钱包"
+                }
+            },
+            "Management": {
+                "components": {
+                    "DraggableAccountList": {
+                        "index": {
+                            "cancel": "取消",
+                            "confirm": "确认",
+                            "successSnackbar": "账户已成功重新排序"
+                        }
+                    },
+                    "ManagePopover": {
+                        "ChangeNameDialog": {
+                            "index": {
+                                "submit": "提交",
+                                "title": "重命名账户"
+                            }
+                        },
+                        "DeleteDialog": {
+                            "index": {
+                                "confirm": "确认",
+                                "deleteSnackbar": "您的账户已被删除",
+                                "placeholder": "密码",
+                                "title": "删除账户",
+                                "warning": "即使您删除了此账户，您仍然可以使用助记词在此或其他账户中重新恢复它。"
+                            }
+                        },
+                        "ExportMnemonicDialog": {
+                            "MnemonicView": {
+                                "Header": {
+                                    "index": {
+                                        "copy": "复制"
+                                    }
+                                },
+                                "index": {
+                                    "copied": "已复制",
+                                    "done": "完成",
+                                    "title": "助记词"
+                                }
+                            },
+                            "index": {
+                                "confirm": "确认",
+                                "placeholder": "密码",
+                                "title": "查看助记词"
+                            }
+                        },
+                        "ExportPrivateKeyDialog": {
+                            "PrivateKeyView": {
+                                "Header": {
+                                    "index": {
+                                        "copy": "复制"
+                                    }
+                                },
+                                "index": {
+                                    "copied": "已复制",
+                                    "done": "完成",
+                                    "title": "查看私钥"
+                                }
+                            },
+                            "index": {
+                                "confirm": "确认",
+                                "mnemonicWarning1": "此私钥仅可用于导入您的",
+                                "mnemonicWarning2": "钱包。",
+                                "placeholder": "密码",
+                                "title": "查看私钥"
+                            }
+                        },
+                        "index": {
+                            "delete": "删除账户",
+                            "rename": "重命名账户",
+                            "viewMnemonic": "查看助记词",
+                            "viewPrivateKey": "查看私钥"
+                        }
+                    }
+                },
+                "entry": {
+                    "addAccount": "添加账户"
+                },
+                "layout": {
+                    "title": "账户管理"
+                }
+            },
+            "components": {
+                "HDPathDialog": {
+                    "index": {
+                        "confirm": "完成",
+                        "description": "以下是支持的区块链的派生路径。",
+                        "title": "HD 路径设置"
+                    }
+                }
+            }
+        },
+        "Chain": {
+            "Aptos": {
+                "Coin": {
+                    "Add": {
+                        "entry": {
+                            "addressPlaceholder": "币地址",
+                            "decimals": "小数位",
+                            "name": "名称",
+                            "submitButton": "提交",
+                            "symbol": "符号",
+                            "warning": "任何人都可以创建一个币，包括创建现有币的伪造版本。请注意诈骗和安全风险。"
+                        }
+                    }
+                }
+            },
+            "Cosmos": {
+                "Chain": {
+                    "Add": {
+                        "entry": {
+                            "addChainSnackbar": "自定义链已添加",
+                            "addressPrefixPlaceholder": "地址前缀（例如，cosmos）",
+                            "baseDenomPlaceholder": "Denom（例如，uatom）",
+                            "chainID": {
+                                "invalid": "已注册"
+                            },
+                            "chainIdPlaceholder": "链ID（例如，cosmoshub-1）",
+                            "chainNamePlaceholder": "自定义链名称",
+                            "coinGeckoIdPlaceholder": "Coingecko API ID（可选）",
+                            "coinTypePlaceholder": "币类型（可选）（默认：118')",
+                            "cosmWasmPlaceholder": "Cosmwasm（可选）",
+                            "decimalsPlaceholder": "小数位（可选）（默认：6）",
+                            "displayDenomPlaceholder": "货币符号",
+                            "explorerURLPlaceholder": "浏览器URL（可选）",
+                            "gasRateAveragePlaceholder": "平均Gas费率（可选）",
+                            "gasRateLowPlaceholder": "低Gas费率（可选）",
+                            "gasRateTinyPlaceholder": "最小Gas费率（可选）",
+                            "imageURLPlaceholder": "链图像URL（可选）",
+                            "restURLError": "无效的Rest URL",
+                            "restURLPlaceholder": "Rest URL",
+                            "sendGasPlaceholder": "发送Gas值（可选）",
+                            "submitButton": "添加自定义链",
+                            "tokenImageURLPlaceholder": "符号图像URL（可选）",
+                            "typePlaceholder": "链类型（可选）（例如，ETHERMINT）",
+                            "warning": "恶意链提供者可能会谎报区块链的状态并记录您的链活动。仅添加您信任的自定义链。"
+                        },
+                        "layout": {
+                            "title": "添加链"
+                        }
+                    }
+                },
+                "NFT": {
+                    "Add": {
+                        "CW721": {
+                            "Search": {
+                                "entry": {
+                                    "addNFTSnackbar": "NFT已添加",
+                                    "contractAddressPlaceholder": "输入NFT合约地址",
+                                    "invalidAddress": "无效地址",
+                                    "invalidAddressTitle": "无效的合约地址",
+                                    "networkError": "发生错误，请稍后再试",
+                                    "networkErrorTitle": "网络错误",
+                                    "noNFTsAvailable1": "未找到NFT",
+                                    "noNFTsAvailable2": "没有可导入的NFT",
+                                    "searchNFTSubText": "如果要查找的NFT不在列表中，请输入“合约地址”。",
+                                    "searchNFTTitle": "搜索您的NFT",
+                                    "submitButton": "导入NFT"
+                                },
+                                "layout": {
+                                    "title": "导入NFT"
+                                }
+                            },
+                            "entry": {
+                                "addressPlaceholder": "NFT合约地址",
+                                "imagePreview": "图像预览",
+                                "invalidAddress": "无效地址",
+                                "invalidAddressTitle": "无效的合约地址",
+                                "invalidOwnership": "给定合约地址或代币ID下您不拥有该NFT。",
+                                "invalidOwnershipTitle": "所有权不匹配",
+                                "invalidSource": "给定合约地址或代币ID下不存在NFT。",
+                                "invalidSourceTitle": "未找到NFT",
+                                "invalidTokenId": "无效的代币ID",
+                                "invalidTokenIdTitle": "无效的代币ID",
+                                "networkError": "发生错误，请稍后再试",
+                                "networkErrorTitle": "网络错误",
+                                "preview": "NFT预览",
+                                "previewSubText": "当您输入自己的NFT信息时，将显示图像。",
+                                "submitButton": "添加自定义NFT",
+                                "tokenIdPlaceholder": "NFT代币ID"
+                            },
+                            "layout": {
+                                "title": "导入NFT"
+                            }
+                        }
+                    }
+                },
+                "Token": {
+                    "Add": {
+                        "CW20": {
+                            "Search": {
+                                "entry": {
+                                    "addTokenSnackbar": "代币已添加",
+                                    "importCustomTokenButton": "导入自定义代币",
+                                    "searchPlaceholder": "搜索代币",
+                                    "submitButton": "导入代币",
+                                    "tokenIconText1": "将自定义代币添加到",
+                                    "tokenIconText2": "Cosmostation扩展中进行管理。",
+                                    "warning": "Cosmostation提供了多个网络中精选的代币列表。如果要查找的代币不在列表中，请点击“导入自定义代币”。"
+                                },
+                                "layout": {
+                                    "title": "导入代币"
+                                }
+                            },
+                            "entry": {
+                                "addTokenErrorSnackbar": "添加失败",
+                                "addTokenSnackbar": "代币已添加",
+                                "addressPlaceholder": "代币合约地址",
+                                "imageURLPlaceholder": "代币Logo URL（可选）",
+                                "submitButton": "添加自定义代币",
+                                "warning": "任何人都可以创建一个代币，包括创建现有代币的伪造版本。请注意诈骗和安全风险。"
+                            }
+                        }
+                    }
+                }
+            },
+            "Ethereum": {
+                "NFT": {
+                    "Add": {
+                        "entry": {
+                            "addNFTSnackbar": "NFT已添加",
+                            "addressPlaceholder": "NFT合约地址",
+                            "copied": "已复制",
+                            "data": "数据",
+                            "imagePreview": "图像预览",
+                            "information": "如果要查找的代币不在列表中，请点击“导入自定义NFT”",
+                            "invalidAddress": "无效地址",
+                            "invalidAddressTitle": "无效的合约地址",
+                            "invalidOwnership": "给定合约地址或代币ID下您不拥有该NFT。",
+                            "invalidOwnershipTitle": "所有权不匹配",
+                            "invalidSource": "给定合约地址或代币ID下不存在NFT。",
+                            "invalidSourceTitle": "未找到NFT",
+                            "invalidTokenId": "无效的代币ID",
+                            "invalidTokenIdTitle": "无效的代币ID",
+                            "networkError": "发生错误，请稍后再试",
+                            "networkErrorTitle": "网络错误",
+                            "preview": "NFT预览",
+                            "previewSubText": "当您输入自己的NFT信息时，将显示图像。",
+                            "submitButton": "添加自定义NFT",
+                            "tokenIdPlaceholder": "NFT代币ID",
+                            "uri": "URI"
+                        },
+                        "layout": {
+                            "title": "导入NFT"
+                        }
+                    }
+                },
+                "Network": {
+                    "Add": {
+                        "entry": {
+                            "addNetworkSnackbar": "网络已添加",
+                            "chainIdPlaceholder": "链ID（例如，0x1或1）",
+                            "coinGeckoIdPlaceholder": "Coingecko API ID（可选）",
+                            "displayDenomPlaceholder": "货币符号（可选）",
+                            "explorerURLPlaceholder": "浏览器URL（可选）",
+                            "imageURLPlaceholder": "链图像URL（可选）",
+                            "networkNamePlaceholder": "网络名称",
+                            "rpcURLPlaceholder": "RPC URL",
+                            "submitButton": "添加网络",
+                            "tokenImageURLPlaceholder": "符号图像URL（可选）",
+                            "warning": "恶意网络提供者可能会谎报区块链的状态并记录您的网络活动。仅添加您信任的自定义网络。"
+                        },
+                        "layout": {
+                            "title": "添加网络"
+                        }
+                    }
+                },
+                "Token": {
+                    "Add": {
+                        "ERC20": {
+                            "Search": {
+                                "entry": {
+                                    "addTokenSnackbar": "代币已添加",
+                                    "importCustomTokenButton": "导入自定义代币",
+                                    "searchPlaceholder": "搜索代币",
+                                    "submitButton": "导入代币",
+                                    "tokenIconText1": "将自定义代币添加到",
+                                    "tokenIconText2": "Cosmostation扩展中进行管理。",
+                                    "warning": "Cosmostation提供了多个网络中精选的代币列表。如果要查找的代币不在列表中，请点击“导入自定义代币”。"
+                                },
+                                "layout": {
+                                    "title": "导入代币"
+                                }
+                            },
+                            "entry": {
+                                "addTokenSnackbar": "代币已添加",
+                                "addressPlaceholder": "代币合约地址",
+                                "decimalsPlaceholder": "代币小数位",
+                                "displayDenomPlaceholder": "代币符号",
+                                "submitButton": "添加自定义代币",
+                                "warning": "任何人都可以创建一个代币，包括创建现有代币的伪造版本。请注意诈骗和安全风险。"
+                            },
+                            "layout": {
+                                "title": "导入代币"
+                            }
+                        }
+                    }
+                }
+            },
+            "Management": {
+                "Use": {
+                    "entry": {
+                        "removeAllowedChainError": "请选择多于1条链",
+                        "searchPlaceholder": "搜索链"
+                    },
+                    "layout": {
+                        "title": "链管理"
+                    }
+                },
+                "entry": {
+                    "addChain": "添加自定义链",
+                    "addCosmosChain": "添加自定义Cosmos链",
+                    "addEthereumNetwork": "添加自定义EVM网络",
+                    "chainManagement": "链管理"
+                },
+                "layout": {
+                    "title": "管理"
+                }
+            }
+        },
+        "Dashboard": {
+            "components": {
+                "ChainItem": {
+                    "index": {
+                        "inactiveNetwork": "非活动网络！",
+                        "networkError": "网络错误"
+                    }
+                }
+            }
+        },
+        "Popup": {
+            "Aptos": {
+                "Sign": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "message": "消息",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求"
+                    }
+                },
+                "Transaction": {
+                    "entry": {
+                        "average": "平均",
+                        "cancelButton": "取消",
+                        "high": "高",
+                        "low": "低",
+                        "maxFee": "最大费用",
+                        "signButton": "签名"
+                    }
+                }
+            },
+            "Bitcoin": {
+                "Send": {
+                    "entry": {
+                        "cancel": "取消",
+                        "expectedFee": "预计费用",
+                        "failedCreateTxHex": "创建交易十六进制失败",
+                        "failedLoadFee": "加载费用失败",
+                        "input": "输入",
+                        "invalidAddress": "无效地址",
+                        "noAmount": "无效发送金额",
+                        "noAvailableAmount": "无可用金额",
+                        "output": "输出",
+                        "sign": "签名"
+                    }
+                },
+                "SignPsbt": {
+                    "entry": {
+                        "cancel": "取消",
+                        "expectedFee": "预计费用",
+                        "failedCreateTxHex": "创建交易十六进制失败",
+                        "failedLoadFee": "加载费用失败",
+                        "input": "输入",
+                        "invalidAddress": "无效地址",
+                        "invalidSender": "无效发送者",
+                        "noAmount": "无效发送金额",
+                        "noAvailableAmount": "无可用金额",
+                        "output": "输出",
+                        "sign": "签名"
+                    }
+                },
+                "SwitchNetwork": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "description": "切换到不同的网络将会断开您当前的网络连接。您确定要切换网络吗？",
+                        "question": "切换网络",
+                        "switchButton": "切换"
+                    }
+                }
+            },
+            "Cosmos": {
+                "AddChain": {
+                    "entry": {
+                        "description1": "希望",
+                        "description2": "添加区块链",
+                        "description3": "到Cosmostation钱包。",
+                        "description4": ""
+                    }
+                },
+                "AddNFTs": {
+                    "entry": {
+                        "addButton": "添加NFT",
+                        "addNFTs": "添加建议的NFT",
+                        "cancelButton": "取消",
+                        "networkError": "网络错误",
+                        "notOwned": "无法导入不属于您的NFT。",
+                        "question": "您是否希望导入这些NFT？"
+                    }
+                },
+                "AddTokens": {
+                    "entry": {
+                        "addButton": "添加代币",
+                        "addTokens": "添加建议的代币",
+                        "cancelButton": "取消",
+                        "question": "您是否希望导入这些代币？"
+                    }
+                },
+                "Sign": {
+                    "Amino": {
+                        "components": {
+                            "TxMessage": {
+                                "messages": {
+                                    "Commission": {
+                                        "index": {
+                                            "title": "领取佣金",
+                                            "validatorAddress": "验证者地址"
+                                        }
+                                    },
+                                    "Contract": {
+                                        "index": {
+                                            "contract": "合约地址",
+                                            "funds": "资金",
+                                            "msg": "消息",
+                                            "sender": "发送者地址"
+                                        }
+                                    },
+                                    "IBCSend": {
+                                        "index": {
+                                            "amount": "金额",
+                                            "memo": "备注",
+                                            "receiver": "接收者地址",
+                                            "sender": "发送者地址",
+                                            "sourceChannel": "通道"
+                                        }
+                                    },
+                                    "Reward": {
+                                        "index": {
+                                            "delegatorAddress": "委托者地址",
+                                            "title": "领取奖励",
+                                            "validatorAddress": "验证者地址"
+                                        }
+                                    },
+                                    "Send": {
+                                        "index": {
+                                            "amount": "金额",
+                                            "fromAddress": "发送地址",
+                                            "toAddress": "接收地址"
+                                        }
+                                    },
+                                    "Swap": {
+                                        "index": {
+                                            "expectedOutput": "预期输出",
+                                            "poolId": "池ID",
+                                            "routes": "路线",
+                                            "swapAmount": "交换金额",
+                                            "tokenIn": "从",
+                                            "tokenOut": "到"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "entry": {
+                            "cancelButton": "取消",
+                            "dataTab": "数据",
+                            "detailTab": "详情",
+                            "failedTransfer": "转账失败",
+                            "insufficientFeeAmount": "费用不足",
+                            "signButton": "签名"
+                        }
+                    },
+                    "Direct": {
+                        "components": {
+                            "TxMessage": {
+                                "messages": {
+                                    "Commission": {
+                                        "index": {
+                                            "title": "领取佣金",
+                                            "validatorAddress": "验证者地址"
+                                        }
+                                    },
+                                    "IBCSend": {
+                                        "index": {
+                                            "amount": "金额",
+                                            "fromAddress": "发送地址",
+                                            "memo": "备注",
+                                            "sourceChannel": "通道",
+                                            "toAddress": "接收地址"
+                                        }
+                                    },
+                                    "Send": {
+                                        "index": {
+                                            "amount": "金额",
+                                            "fromAddress": "发送地址",
+                                            "toAddress": "接收地址"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "entry": {
+                            "cancelButton": "取消",
+                            "confirmButton": "确认",
+                            "dataTab": "数据",
+                            "decodedDataTab": "解码",
+                            "detailTab": "详情",
+                            "failedTransfer": "转账失败",
+                            "insufficientFeeAmount": "费用不足",
+                            "invalidAccountType": "无效账户类型（Ledger）"
+                        }
+                    },
+                    "Message": {
+                        "entry": {
+                            "cancelButton": "取消",
+                            "dataTab": "数据",
+                            "detailTab": "详情",
+                            "failedTransfer": "转账失败",
+                            "signButton": "签名"
+                        }
+                    },
+                    "components": {
+                        "DecodedTx": {
+                            "index": {
+                                "warning": "由于解密失败，某些交易可能不会显示数据，但这不影响交易执行。"
+                            }
+                        },
+                        "Memo": {
+                            "index": {
+                                "memo": "备注",
+                                "memoPlaceholder": "备注（可选）"
+                            }
+                        }
+                    }
+                }
+            },
+            "Ethereum": {
+                "AddNetwork": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "chainId": "链ID",
+                        "confirmButton": "确认",
+                        "displayDenom": "货币符号",
+                        "explorerURL": "区块浏览器URL",
+                        "networkName": "网络名称",
+                        "networkURL": "网络URL",
+                        "question": "允许此站点添加网络吗？",
+                        "warning": "Cosmostation不验证自定义网络。"
+                    }
+                },
+                "AddTokens": {
+                    "entry": {
+                        "addButton": "添加代币",
+                        "addTokens": "添加建议的代币",
+                        "cancelButton": "取消",
+                        "question": "您是否希望导入这些代币？"
+                    }
+                },
+                "PersonalSign": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "message": "消息",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求",
+                        "warningText": "您正在签名。"
+                    }
+                },
+                "Sign": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "message": "消息",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求",
+                        "warningText": "签署此消息可能很危险。此签名可能会在您的账户名义下执行任何操作，包括将您的账户及其所有资产的完全控制权授予请求站点。只有在您知道自己在做什么或完全信任请求站点的情况下才签署此消息。"
+                    }
+                },
+                "SignTransaction": {
+                    "components": {
+                        "FeeEIP1559Dialog": {
+                            "index": {
+                                "maxFeePerGasSetting": "最大每气体费用设置",
+                                "submitButton": "保存"
+                            }
+                        },
+                        "GasPriceDialog": {
+                            "index": {
+                                "gasPriceSetting": "气体价格设置",
+                                "submitButton": "保存"
+                            }
+                        },
+                        "TxMessage": {
+                            "messages": {
+                                "Approve": {
+                                    "index": {
+                                        "amount": "金额",
+                                        "grantedAddress": "授权给",
+                                        "tokenAddress": "代币"
+                                    }
+                                },
+                                "Deploy": {
+                                    "index": {
+                                        "data": "数据"
+                                    }
+                                },
+                                "Interact": {
+                                    "index": {
+                                        "contractAddress": "合约地址",
+                                        "contractMethod": "合约方法",
+                                        "data": "数据",
+                                        "expectedOutput": "预期输出",
+                                        "fromToken": "从",
+                                        "receiverAddress": "接收者地址",
+                                        "swapAmount": "交换金额",
+                                        "toToken": "到"
+                                    }
+                                },
+                                "NFT": {
+                                    "ERC1155": {
+                                        "SafeTransferFrom": {
+                                            "index": {
+                                                "contractAddress": "合约地址",
+                                                "fromAddress": "发送地址",
+                                                "toAddress": "接收地址"
+                                            }
+                                        }
+                                    },
+                                    "ERC721": {
+                                        "TransferFrom": {
+                                            "index": {
+                                                "contractAddress": "合约地址",
+                                                "fromAddress": "发送地址",
+                                                "toAddress": "接收地址"
+                                            }
+                                        }
+                                    }
+                                },
+                                "Send": {
+                                    "index": {
+                                        "amount": "金额",
+                                        "fromAddress": "发送地址",
+                                        "toAddress": "接收地址"
+                                    }
+                                },
+                                "Transfer": {
+                                    "index": {
+                                        "amount": "金额",
+                                        "toAddress": "接收地址",
+                                        "tokenAddress": "代币"
+                                    }
+                                },
+                                "TransferFrom": {
+                                    "index": {
+                                        "amount": "金额",
+                                        "fromAddress": "发送地址",
+                                        "toAddress": "接收地址",
+                                        "tokenAddress": "代币"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "entry": {
+                        "average": "平均",
+                        "cancelButton": "取消",
+                        "current": "当前",
+                        "fee": "最大费用",
+                        "gasSettings": "气体设置",
+                        "insufficientAmount": "金额不足",
+                        "low": "低",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求",
+                        "tiny": "极小",
+                        "total": "总计"
+                    }
+                },
+                "SignTypedData": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "message": "消息",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求"
+                    }
+                },
+                "SwitchNetwork": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "description": "这将在Cosmostation中切换所选网络至之前选择的网络。",
+                        "question": "允许此站点切换网络吗？",
+                        "switchButton": "切换"
+                    }
+                },
+                "Transaction": {
+                    "components": {
+                        "TxMessage": {
+                            "components": {
+                                "CopyButton": {
+                                    "index": {
+                                        "copied": "已复制"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Sui": {
+                "SignMessage": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "message": "消息",
+                        "signButton": "签名",
+                        "signatureRequest": "签名请求"
+                    }
+                },
+                "Transaction": {
+                    "entry": {
+                        "cancelButton": "取消",
+                        "expectedFee": "预计费用",
+                        "maxFee": "最大费用",
+                        "signButton": "签名"
+                    }
+                }
+            },
+            "TxReceipt": {
+                "Entry": {
+                    "Aptos": {
+                        "entry": {
+                            "blockHeight": "区块高度",
+                            "confirm": "确认",
+                            "copied": "已复制",
+                            "date": "日期",
+                            "expirationDate": "过期日期",
+                            "explorer": "在浏览器中查看",
+                            "failure": "失败",
+                            "fee": "费用",
+                            "information": "信息",
+                            "network": "网络",
+                            "networkError": "网络错误",
+                            "networkErrorDescription": "无法获取交易数据",
+                            "pending": "待处理",
+                            "status": "状态",
+                            "success": "成功",
+                            "transactionConfirmed": "交易已确认",
+                            "transactionReceipt": "交易收据",
+                            "txHash": "交易哈希",
+                            "version": "版本ID",
+                            "vmStatus": "虚拟机状态"
+                        }
+                    },
+                    "Cosmos": {
+                        "entry": {
+                            "blockHeight": "区块高度",
+                            "confirm": "确认",
+                            "copied": "已复制",
+                            "date": "日期",
+                            "explorer": "在浏览器中查看",
+                            "failure": "失败",
+                            "fees": "使用的/需要的Gas",
+                            "gas": "使用的Gas / 需要的Gas",
+                            "information": "信息",
+                            "network": "网络",
+                            "networkError": "网络错误",
+                            "networkErrorDescription": "无法获取交易数据",
+                            "pending": "待处理",
+                            "status": "状态",
+                            "success": "成功",
+                            "transactionConfirmed": "交易已确认",
+                            "transactionReceipt": "交易收据",
+                            "txHash": "交易哈希"
+                        }
+                    },
+                    "Ethereum": {
+                        "entry": {
+                            "blockNumber": "区块编号",
+                            "confirm": "确认",
+                            "copied": "已复制",
+                            "date": "日期",
+                            "effectiveGasPrice": "有效Gas价格",
+                            "explorer": "在浏览器中查看",
+                            "failure": "失败",
+                            "fee": "费用",
+                            "gas": "使用的Gas",
+                            "information": "信息",
+                            "network": "网络",
+                            "networkError": "网络错误",
+                            "networkErrorDescription": "无法获取交易数据",
+                            "pending": "待处理",
+                            "status": "状态",
+                            "success": "成功",
+                            "transactionConfirmed": "交易已确认",
+                            "transactionReceipt": "交易收据",
+                            "txHash": "交易哈希"
+                        }
+                    },
+                    "Sui": {
+                        "entry": {
+                            "checkPoint": "检查点",
+                            "confirm": "确认",
+                            "copied": "已复制",
+                            "date": "日期",
+                            "digest": "摘要哈希",
+                            "epoch": "纪元",
+                            "explorer": "在浏览器中查看",
+                            "failure": "失败",
+                            "fee": "费用",
+                            "information": "信息",
+                            "network": "网络",
+                            "networkError": "网络错误",
+                            "networkErrorDescription": "无法获取交易数据",
+                            "pending": "待处理",
+                            "status": "状态",
+                            "success": "成功",
+                            "transactionConfirmed": "交易已确认",
+                            "transactionReceipt": "交易收据"
+                        }
+                    },
+                    "components": {
+                        "CopyButton": {
+                            "index": {
+                                "copied": "已复制"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Restore": {
+            "entry": {
+                "passwordConfirmPlaceholder": "确认密码",
+                "passwordPlaceholder": "密码",
+                "restoreButton": "恢复",
+                "restoreStringPlaceholder": "要恢复钱包，请输入您在Cosmostation钱包中的助记词。"
+            },
+            "layout": {
+                "title": "恢复钱包"
+            }
+        },
+        "Setting": {
+            "AddressBook": {
+                "Add": {
+                    "entry": {
+                        "addressPlaceholder": "地址",
+                        "labelPlaceholder": "标签",
+                        "memoPlaceholder": "备注（可选）",
+                        "save": "保存"
+                    },
+                    "layout": {
+                        "title": "添加地址"
+                    }
+                },
+                "entry": {
+                    "addAddressButton": "添加地址"
+                },
+                "layout": {
+                    "title": "地址簿"
+                }
+            },
+            "ChangeCurrency": {
+                "layout": {
+                    "title": "货币"
+                }
+            },
+            "ChangeLanguage": {
+                "layout": {
+                    "title": "语言"
+                }
+            },
+            "ChangePassword": {
+                "entry": {
+                    "changePasswordSnackbar": "密码已更改",
+                    "confirmNewPasswordPlaceholder": "确认密码",
+                    "currentPasswordPlaceholder": "当前密码",
+                    "done": "完成",
+                    "newPasswordPlaceholder": "新密码"
+                },
+                "layout": {
+                    "title": "更改密码"
+                }
+            },
+            "ConnectedSites": {
+                "layout": {
+                    "title": "已连接的站点"
+                }
+            },
+            "Ledger": {
+                "layout": {
+                    "title": "Ledger"
+                }
+            },
+            "Provider": {
+                "entry": {
+                    "description": "当在 chrome://extensions 或未安装在您的电脑上的情况下关闭选定的钱包扩展时，优先服务会被激活"
+                },
+                "layout": {
+                    "title": "优先级"
+                }
+            }
+        },
+        "Wallet": {
+            "NFTDetail": {
+                "Entry": {
+                    "cosmos": {
+                        "components": {
+                            "NFTInfoItem": {
+                                "index": {
+                                    "attributes": "属性",
+                                    "collection": "集合",
+                                    "contractAddress": "合约地址",
+                                    "copied": "已复制",
+                                    "description": "描述",
+                                    "name": "名称",
+                                    "numberOfNFT": "NFT数量",
+                                    "ownerAddress": "所有者",
+                                    "source": "来源",
+                                    "symbol": "符号",
+                                    "tokenId": "Token ID",
+                                    "tokenType": "Token标准",
+                                    "url": "URL"
+                                }
+                            }
+                        },
+                        "index": {
+                            "information": "Cosmostation钱包显示来自源URL的NFT信息，并不拥有您的NFT。",
+                            "networkError": "网络错误",
+                            "notOwnedNFT": "您无法转移不属于您的NFT。",
+                            "send": "发送NFT"
+                        }
+                    },
+                    "ethereum": {
+                        "components": {
+                            "NFTInfoItem": {
+                                "index": {
+                                    "attributes": "属性",
+                                    "balance": "余额",
+                                    "contractAddress": "合约地址",
+                                    "copied": "已复制",
+                                    "description": "描述",
+                                    "ownerAddress": "所有者",
+                                    "source": "来源",
+                                    "tokenId": "Token ID",
+                                    "tokenType": "Token标准",
+                                    "url": "URL"
+                                }
+                            }
+                        },
+                        "index": {
+                            "information": "Cosmostation钱包显示来自源URL的NFT信息，并不拥有您的NFT。",
+                            "notOwnedNFT": "您无法转移不属于您的NFT。",
+                            "send": "发送NFT",
+                            "untransferableObject": "不可转移的对象"
+                        }
+                    },
+                    "sui": {
+                        "components": {
+                            "NFTInfoItem": {
+                                "index": {
+                                    "copied": "已复制",
+                                    "creator": "创建者",
+                                    "description": "描述",
+                                    "objectId": "对象ID",
+                                    "ownerAddress": "所有者",
+                                    "url": "URL"
+                                }
+                            }
+                        },
+                        "index": {
+                            "send": "发送NFT",
+                            "untransferableObject": "不可转移的对象"
+                        }
+                    }
+                },
+                "layout": {
+                    "title": "NFT详情"
+                }
+            },
+            "NFTSend": {
+                "Entry": {
+                    "Cosmos": {
+                        "index": {
+                            "insufficientAmount": "金额不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "memoPlaceholder": "备注（可选）",
+                            "networkError": "网络错误",
+                            "notOwnedNFT": "您无法转移不属于您的NFT。",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    },
+                    "Ethereum": {
+                        "components": {
+                            "NFTButton": {
+                                "index": {
+                                    "balance": "余额"
+                                }
+                            },
+                            "NFTPopover": {
+                                "components": {
+                                    "NFTItem": {
+                                        "index": {
+                                            "balance": "余额"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "index": {
+                            "fee": "费用",
+                            "insufficientAmount": "金额不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "invalidSendNFTQuantity": "无效的NFT数量",
+                            "networkError": "网络错误",
+                            "notOwnedNFT": "您无法转移不属于您的NFT。",
+                            "quantityPlaceholder": "数量",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    },
+                    "Sui": {
+                        "index": {
+                            "fee": "费用",
+                            "insufficientAmount": "金额不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    }
+                },
+                "layout": {
+                    "title": "发送NFT"
+                }
+            },
+            "OsmosisSwap": {
+                "components": {
+                    "CoinListBottomSheet": {
+                        "index": {
+                            "searchPlaceholder": "搜索",
+                            "title": "选择一种代币"
+                        }
+                    },
+                    "SlippageSettingDialog": {
+                        "confirm": "确认",
+                        "slippageTolerance": "滑点容忍度",
+                        "title": "设置",
+                        "toleranceInfo": "如果价格变动超过此百分比，交易将被撤销。"
+                    }
+                },
+                "entry": {
+                    "availableAmount": "可用",
+                    "excessiveSwap": "不能交换超过池中代币数量的Token",
+                    "expectedOutput": "预期输出",
+                    "insufficientAmount": "金额不足",
+                    "insufficientFeeAmount": "手续费不足",
+                    "invalidAmount": "无效金额",
+                    "invalidOutputAmount": "无效的输出金额",
+                    "invalidPriceImpact": "价格影响过高",
+                    "minimumReceived": "滑点后的最小接收量",
+                    "networkError": "网络错误",
+                    "priceImpact": "价格影响",
+                    "swapButton": "交换",
+                    "swapFee": "交换费用",
+                    "title": "交换"
+                }
+            },
+            "Receive": {
+                "Entry": {
+                    "Aptos": {
+                        "address": "地址",
+                        "copied": "已复制",
+                        "scanQrCode": "扫描二维码"
+                    },
+                    "Bitcoin": {
+                        "address": "地址",
+                        "copied": "已复制",
+                        "scanQrCode": "扫描二维码"
+                    },
+                    "Cosmos": {
+                        "address": "地址",
+                        "copied": "已复制",
+                        "scanQrCode": "扫描二维码"
+                    },
+                    "Ethereum": {
+                        "address": "地址",
+                        "copied": "已复制",
+                        "scanQrCode": "扫描二维码"
+                    },
+                    "Sui": {
+                        "address": "地址",
+                        "copied": "已复制",
+                        "scanQrCode": "扫描二维码"
+                    }
+                },
+                "layout": {
+                    "title": "存款"
+                }
+            },
+            "Send": {
+                "Entry": {
+                    "Aptos": {
+                        "components": {
+                            "CoinListBottomSheet": {
+                                "index": {
+                                    "searchPlaceholder": "搜索",
+                                    "title": "选择一种代币"
+                                }
+                            }
+                        },
+                        "index": {
+                            "amountPlaceholder": "金额",
+                            "insufficientAmount": "金额不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    },
+                    "Bitcoin": {
+                        "components": {
+                            "ConfirmDialog": {
+                                "index": {
+                                    "cancel": "取消",
+                                    "confirm": "确认",
+                                    "confirmText": "您确定要发送吗？"
+                                }
+                            }
+                        },
+                        "index": {
+                            "amountPlaceholder": "金额",
+                            "failedCreateTxHex": "创建交易十六进制失败",
+                            "failedLoadFee": "网络错误",
+                            "failureSend": "未知错误",
+                            "fee": "手续费",
+                            "invalidAddress": "无效地址",
+                            "memoMaxLength": "OP_RETURN 过长（最大：80字节）",
+                            "memoPlaceholder": "OP_RETURN（可选）",
+                            "noAmount": "无金额",
+                            "noAvailableAmount": "金额不足",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送",
+                            "successSend": "成功"
+                        }
+                    },
+                    "Cosmos": {
+                        "components": {
+                            "CoinListBottomSheet": {
+                                "index": {
+                                    "searchPlaceholder": "搜索",
+                                    "title": "选择一种代币"
+                                }
+                            },
+                            "CoinOrTokenPopover": {
+                                "components": {
+                                    "TokenButton": {
+                                        "index": {
+                                            "available": "可用"
+                                        }
+                                    }
+                                },
+                                "index": {
+                                    "available": "可用"
+                                }
+                            },
+                            "IBCSend": {
+                                "components": {
+                                    "RecipientIBCBottomSheet": {
+                                        "index": {
+                                            "searchPlaceholder": "搜索",
+                                            "title": "选择一条链"
+                                        }
+                                    }
+                                },
+                                "index": {
+                                    "amountPlaceholder": "金额",
+                                    "available": "可用",
+                                    "bankLocked": "当前禁用了IBC发送功能。可以通过链上治理在以后激活。",
+                                    "exchangeWarning": "中心化交易所不支持IBC交易。",
+                                    "ibcWarningHeadertitle": "不支持IBC发送",
+                                    "ibcWarningSubtitle": "没有可用于IBC发送的代币或通证。",
+                                    "insufficientAmount": "金额不足",
+                                    "insufficientFeeAmount": "手续费不足",
+                                    "invalidAddress": "无效地址",
+                                    "invalidAmount": "无效金额",
+                                    "memoPlaceholder": "备注（可选）",
+                                    "recipientAddressPlaceholder": "接收者地址",
+                                    "sendButton": "发送",
+                                    "timeoutHeightError": "网络错误"
+                                }
+                            },
+                            "Send": {
+                                "index": {
+                                    "amountPlaceholder": "金额",
+                                    "available": "可用",
+                                    "bankLocked": "当前禁用了发送功能。可以通过链上治理在以后激活。",
+                                    "insufficientAmount": "金额不足",
+                                    "insufficientFeeAmount": "手续费不足",
+                                    "invalidAddress": "无效地址",
+                                    "invalidAmount": "无效金额",
+                                    "memoPlaceholder": "备注（可选）",
+                                    "recipientAddressPlaceholder": "接收者地址",
+                                    "sendButton": "发送"
+                                }
+                            }
+                        },
+                        "index": {
+                            "ibcSend": "IBC发送",
+                            "send": "发送"
+                        }
+                    },
+                    "Ethereum": {
+                        "components": {
+                            "CoinButton": {
+                                "index": {
+                                    "available": "可用"
+                                }
+                            },
+                            "CoinListBottomSheet": {
+                                "index": {
+                                    "searchPlaceholder": "搜索",
+                                    "title": "选择一种代币"
+                                }
+                            }
+                        },
+                        "index": {
+                            "amountPlaceholder": "金额",
+                            "bankLocked": "当前禁用了发送功能。可以通过链上治理在以后激活。",
+                            "insufficientAmount": "金额不足",
+                            "insufficientFee": "手续费不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    },
+                    "Sui": {
+                        "components": {
+                            "CoinButton": {
+                                "index": {
+                                    "available": "可用"
+                                }
+                            },
+                            "CoinListBottomSheet": {
+                                "index": {
+                                    "searchPlaceholder": "搜索",
+                                    "title": "选择一种代币"
+                                }
+                            },
+                            "CoinPopover": {
+                                "components": {
+                                    "CoinItem": {
+                                        "index": {
+                                            "available": "可用"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "index": {
+                            "amountPlaceholder": "金额",
+                            "insufficientAmount": "金额不足",
+                            "invalidAddress": "无效地址",
+                            "invalidAmount": "无效金额",
+                            "recipientAddressPlaceholder": "接收者地址",
+                            "sendButton": "发送"
+                        }
+                    }
+                },
+                "layout": {
+                    "title": "发送"
+                }
+            },
+            "Swap": {
+                "components": {
+                    "CoinListBottomSheet": {
+                        "index": {
+                            "searchPlaceholder": "搜索",
+                            "title": "选择一种代币"
+                        }
+                    },
+                    "NoticeBottomSheet": {
+                        "index": {
+                            "cancel": "取消",
+                            "confirm": "确认",
+                            "title": "通知"
+                        }
+                    },
+                    "SlippageSettingDialog": {
+                        "confirm": "确认",
+                        "slippageTolerance": "滑点容忍度",
+                        "title": "设置",
+                        "toleranceInfo": "如果价格变动超过此百分比，您的交易将被撤销。"
+                    },
+                    "SwapCoinContainer": {
+                        "components": {
+                            "ChainListBottomSheet": {
+                                "components": {
+                                    "ChainItem": {
+                                        "index": {
+                                            "unAvailable1": "交换至",
+                                            "unAvailable2": "即将推出"
+                                        }
+                                    }
+                                },
+                                "index": {
+                                    "chainBottomListTitle": "选择一条链",
+                                    "searchChainPlaceholder": "搜索链"
+                                }
+                            },
+                            "TokenListBottomSheet": {
+                                "index": {
+                                    "searchTokenPlaceholder": "搜索代币",
+                                    "tokenBottomListTitle": "选择一种代币"
+                                }
+                            }
+                        },
+                        "index": {
+                            "availableAmount": "可用",
+                            "balance": "余额",
+                            "selectChain": "选择链",
+                            "selectCoin": "选择代币"
+                        }
+                    }
+                },
+                "entry": {
+                    "allowanceWarning": "Swap Router 使用签名的许可批准。这允许您在一次交易中批准智能合约访问您选择的代币并进行交换。",
+                    "availableAmount": "可用",
+                    "balanceWarningDescription1": "你的钱还不够",
+                    "balanceWarningDescription2": "您的余额不足以覆盖交换金额和此转账的预估矿工费。将输入金额设置为",
+                    "balanceWarningDescription3": "或更低以覆盖矿工费。",
+                    "excessiveSwap": "不能交换超过池中代币数量的Token",
+                    "exchangeRate": "汇率",
+                    "expectedOutput": "预期输出",
+                    "gasFee": "矿工费",
+                    "gasFees": "退款前的矿工费",
+                    "gasFeesInfo": "我们将矿工费高估50%以保证您的交易。任何未使用的矿工费将由Axelar退还。",
+                    "ibcRelayingTimeInfo": "IBC传输通常需要10-30秒，但由于中继器问题，尤其是在低IBC量的链上，可能会出现延迟。",
+                    "insufficientAmount": "金额不足",
+                    "insufficientFeeAmount": "手续费不足",
+                    "invalidAmount": "无效金额",
+                    "invalidOutputAmount": "无效输出金额",
+                    "invalidSwapTx": "无效交易数据",
+                    "lessThanFeeWarningDescription1": "您的余额不足以支付此交易的预估矿工费。确保您有超过",
+                    "lessThanFeeWarningDescription2": "然后再试。",
+                    "liquidityWarning": "由于当前流动性，您的输入和输出值之间可能存在较大差异。",
+                    "minimumReceived": "滑点后的最小接收量",
+                    "minutes": "分钟",
+                    "multiTxSwap": "多交易交换不可用",
+                    "multiTxSwapError": "此交换需要多个交易",
+                    "networkError": "网络错误",
+                    "osmosisFallbackAddress": "Osmosis备用地址",
+                    "oversizedSwap": "超大交换",
+                    "permissionButton": "授予使用代币的权限",
+                    "priceImpact": "价格影响",
+                    "processingTime": "预计处理时间",
+                    "receiveWarningMessage": "如果市场波动较大，交易可能会回滚并在目标链上返回axlUSDC。当这种情况发生时，您可以将axlUSDC交换为您想要的代币。",
+                    "squidSwapNoticeDescription": "当用户选择的源链不在coinType 118地址中时，用户需要有一个备用地址。如果在交换过程中遇到问题，用户可以从备用地址或其他coinType 118地址恢复资金。\n\nCosmostation使用Osmosis钱包地址作为备用地址，用户的当前备用地址如下",
+                    "swapButton": "交换",
+                    "swapButtonOn": "在",
+                    "swapFee": "交换费用",
+                    "swapInfoDescription1": "由于滑点",
+                    "swapInfoDescription2": "，您收到的最终金额和估计金额可能不同。您至少会收到",
+                    "swapInfoDescription3": "",
+                    "swapVenue": "交换场所",
+                    "title": "交换",
+                    "txSizeWarning": "交易大小目前限制为$10,000。请减少您的交易规模并重试。"
+                },
+                "index": {
+                    "fetchingData": "获取数据",
+                    "networkError": "网络错误"
+                }
+            },
+            "components": {
+                "Header": {
+                    "AccountButton": {
+                        "ConnectDialog": {
+                            "index": {
+                                "connect": "连接",
+                                "connectDescription1": "您未连接到此站点。",
+                                "connectDescription2": "您是否要连接？",
+                                "disconnect": "断开连接",
+                                "disconnectDescription1": "您的钱包已连接到此站点。",
+                                "disconnectDescription2": "您是否要断开连接？"
+                            }
+                        },
+                        "index": {
+                            "connected": "已连接",
+                            "notConnected": "未连接"
+                        }
+                    },
+                    "AccountPopover": {
+                        "index": {
+                            "title": "选择账户"
+                        }
+                    },
+                    "ChainPopover": {
+                        "index": {
+                            "title": "选择一条链"
+                        }
+                    },
+                    "NetworkPopover": {
+                        "index": {
+                            "customNetwork": "自定义网络",
+                            "title": "选择一个网络"
+                        }
+                    }
+                },
+                "LedgerCheck": {
+                    "index": {
+                        "connect": "连接",
+                        "connectDescription": "将您的Ledger硬件钱包连接到计算机并按“连接”",
+                        "notSupportedDescription": "此网络不支持Ledger硬件钱包。请使用助记词或私钥继续。",
+                        "notSupportedTitle": "不支持"
+                    }
+                },
+                "aptos": {
+                    "CoinList": {
+                        "index": {
+                            "addCoinButton": "添加代币",
+                            "coin": "代币"
+                        }
+                    },
+                    "NativeChainCard": {
+                        "index": {
+                            "copied": "已复制",
+                            "depositButton": "存款",
+                            "networkError": "网络错误",
+                            "sendButton": "发送"
+                        }
+                    }
+                },
+                "bitcoin": {
+                    "NativeChainCard": {
+                        "index": {
+                            "copied": "已复制",
+                            "depositButton": "存款",
+                            "mempoolFunded": "待接收",
+                            "mempoolSpent": "待发送",
+                            "networkError": "网络错误",
+                            "sendButton": "发送"
+                        }
+                    }
+                },
+                "cosmos": {
+                    "CoinList": {
+                        "components": {
+                            "TokenItem": {
+                                "index": {
+                                    "invalidBalance": "无可用余额。",
+                                    "networkError": "网络错误"
+                                }
+                            }
+                        },
+                        "index": {
+                            "importTokenButton": "导入代币"
+                        }
+                    },
+                    "NFTList": {
+                        "components": {
+                            "NFTCardItem": {
+                                "index": {
+                                    "networkError": "网络错误"
+                                }
+                            }
+                        },
+                        "index": {
+                            "importNFTButton": "导入NFT"
+                        }
+                    },
+                    "NativeChainCard": {
+                        "index": {
+                            "available": "可用",
+                            "claimCommissionButton": "领取佣金",
+                            "claimRewardButton": "领取奖励",
+                            "copied": "已复制",
+                            "delegated": "已委托",
+                            "depositButton": "存款",
+                            "incentive": "激励",
+                            "insufficientFeeAmount": "手续费不足",
+                            "invalidCommissionAmount": "没有可领取的佣金",
+                            "invalidCommissionTx": "无法生成佣金交易",
+                            "invalidRewardAmount": "没有可领取的奖励",
+                            "invalidRewardTx": "无法生成奖励交易",
+                            "ledgerNotSupport": "Ledger不支持此功能",
+                            "networkError": "网络错误",
+                            "reward": "奖励",
+                            "sendButton": "发送",
+                            "swapButton": "交换",
+                            "unbonding": "解除绑定中",
+                            "vesting": "锁定期"
+                        }
+                    },
+                    "TerminatedNativeChainCard": {
+                        "index": {
+                            "copied": "已复制",
+                            "depositButton": "存款",
+                            "inactiveNetwork": "非活跃网络！",
+                            "inactiveNetworkDescription": "此网络不再运行",
+                            "inactiveNetworkSubDescription": "请注意，Cosmostation钱包仅显示存档数据。",
+                            "sendButton": "发送"
+                        }
+                    }
+                },
+                "ethereum": {
+                    "NFTList": {
+                        "components": {
+                            "NFTCardItem": {
+                                "index": {
+                                    "networkError": "网络错误"
+                                }
+                            }
+                        },
+                        "index": {
+                            "importNFTButton": "导入NFT",
+                            "nft": "NFT"
+                        }
+                    },
+                    "NativeChainCard": {
+                        "index": {
+                            "copied": "已复制",
+                            "depositButton": "存款",
+                            "networkError": "网络错误",
+                            "sendButton": "发送"
+                        }
+                    },
+                    "TokenList": {
+                        "components": {
+                            "TokenItem": {
+                                "index": {
+                                    "invalidError": "无效代币",
+                                    "networkError": "网络错误"
+                                }
+                            }
+                        },
+                        "index": {
+                            "importTokenButton": "导入代币",
+                            "token": "代币"
+                        }
+                    }
+                },
+                "sui": {
+                    "CoinList": {
+                        "index": {
+                            "coin": "代币"
+                        }
+                    },
+                    "NFTList": {
+                        "index": {
+                            "nft": "NFT"
+                        }
+                    },
+                    "NativeChainCard": {
+                        "index": {
+                            "available": "可用",
+                            "copied": "已复制",
+                            "depositButton": "存款",
+                            "earned": "已赚取",
+                            "networkError": "网络错误",
+                            "sendButton": "发送",
+                            "staked": "您的质押",
+                            "swapButton": "交换"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schema": {
+        "addChainForm": {
+            "chainName": {
+                "any": {
+                    "invalid": "已注册"
+                }
+            },
+            "coinType": {
+                "any": {
+                    "invalid": "输入格式无效"
+                }
+            },
+            "decimal": {
+                "base": "请输入小数位"
+            },
+            "gasRate": {
+                "object": {
+                    "and": "请输入完整的Gas Rate值"
+                }
+            },
+            "restUrl": {
+                "any": {
+                    "invalid": "已注册"
+                }
+            },
+            "type": {
+                "string": {
+                    "any": {
+                        "invalid": "请输入'ETHERMINT'或留空"
+                    }
+                }
+            }
+        },
+        "addNetworkForm": {
+            "address": {
+                "string": {
+                    "pattern": {
+                        "base": "必须以十六进制或十进制输入（例如：0x1 或 1）"
+                    }
+                }
+            }
+        },
+        "addressBookForm": {
+            "address": {
+                "string": {
+                    "pattern": {
+                        "base": "无效地址"
+                    }
+                }
+            }
+        },
+        "changeNameForm": {
+            "name": {
+                "any": {
+                    "invlid": "请选择另一个名称。"
+                }
+            }
+        },
+        "changePasswordForm": {
+            "password": {
+                "any": {
+                    "only": "密码不匹配。"
+                }
+            },
+            "repeatPassword": {
+                "any": {
+                    "only": "确认密码不匹配。"
+                }
+            }
+        },
+        "common": {
+            "any": {
+                "required": "必填"
+            },
+            "boolean": {
+                "base": "请输入布尔值。"
+            },
+            "number": {
+                "base": "请输入数字。",
+                "empty": "请输入数字。",
+                "greater": "请输入大于 {#limit} 的数字。",
+                "less": "请输入小于 {#limit} 的数字。",
+                "max": "请输入小于 {#limit} 的数字",
+                "min": "请输入至少 {#limit} 或更多数字。"
+            },
+            "string": {
+                "base": "请输入字符。",
+                "empty": "必填",
+                "max": "请输入少于 {#limit} 个字符。",
+                "min": "请输入至少 {#limit} 或更多字符。"
+            }
+        },
+        "importTokenForm": {
+            "address": {
+                "string": {
+                    "pattern": {
+                        "base": "无效的代币地址"
+                    }
+                }
+            }
+        },
+        "ledgerForm": {
+            "name": {
+                "any": {
+                    "invlid": "请选择另一个名称。"
+                }
+            }
+        },
+        "mnemonicForm": {
+            "mnemonic": "助记词无效",
+            "name": {
+                "any": {
+                    "invlid": "请选择另一个名称。"
+                }
+            }
+        },
+        "passwordForm": {
+            "password": {
+                "any": {
+                    "only": "密码不匹配。"
+                }
+            },
+            "repeatPassword": {
+                "any": {
+                    "only": "确认密码不匹配。"
+                }
+            }
+        },
+        "privateKeyForm": {
+            "name": {
+                "any": {
+                    "invlid": "请选择另一个名称。"
+                }
+            },
+            "privateKey": "私钥无效"
+        },
+        "restoreForm": {
+            "repeatPassword": {
+                "any": {
+                    "only": "确认密码不匹配。"
+                }
+            },
+            "restoreString": {
+                "any": {
+                    "only": "恢复短语不匹配。"
+                }
+            }
+        }
+    }
+}

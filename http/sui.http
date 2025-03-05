@@ -1,0 +1,109 @@
+# @rpcURL=https://fullnode.devnet.sui.io
+# @rpcURL=https://rpc-sui-testnet.cosmostation.io/
+@rpcURL=https://fullnode.testnet.sui.io:443/
+
+
+
+### 
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "rpc.discover",
+    "params": [],
+    "id": 0
+}
+
+### sui_getObjectsOwnedByAddress
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "suix_getOwnedObjects",
+    "params": ["0x67b11c023bced7ae79530b653e81e37116836acf24d536e6ffbd4bf37159d3cf",
+      {
+        "options": {
+          "showType": true,
+          "showDisplay": true,
+        },
+      },
+      null,
+      null,
+    ],
+    "id": 0
+}
+
+### sui_getObject
+POST {{rpcURL}}
+content-type: application/json
+
+[{
+    "jsonrpc": "2.0",
+    "method": "sui_getObject",
+    "params": ["0x249b721185aaea25a2b8900e3e3a35bd5273fb4c"],
+    "id": 1
+},
+{
+    "jsonrpc": "2.0",
+    "method": "sui_getObject",
+    "params": ["0x4d3be548a9840e3c00fc3d4c42fdc39cedbdce3d"],
+    "id": 1
+},
+{
+    "jsonrpc": "2.0",
+    "method": "sui_getObject",
+    "params": ["0x6e84058a9f049f9508310697269f60d7969d2861"],
+    "id": 1
+},
+{
+    "jsonrpc": "2.0",
+    "method": "sui_getObject",
+    "params": ["0x6e84058a9f049f9508310697269f60d7969d2860"],
+    "id": 1
+}]
+
+### sui_getCoinMetadata
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "sui_getCoinMetadata",
+    "params": ["0x46c5f442cadb487ad798445b24883a1134d77c13::pool::TestBNB"],
+    "id": 1
+}
+
+### sui_getBalance
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "suix_getBalance",
+    "params": ["0x67b11c023bced7ae79530b653e81e37116836acf24d536e6ffbd4bf37159d3cf", "0x2::sui::SUI"],
+    "id": 1
+}
+
+### sui_getBalance
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "suix_getBalance",
+    "params": ["0x67b11c023bced7ae79530b653e81e37116836acf24d536e6ffbd4bf37159d3cf", "0x2::sui::SUI"],
+    "id": 1
+}
+
+### sui_getAllCoins
+POST {{rpcURL}}
+content-type: application/json
+
+{
+    "jsonrpc": "2.0",
+    "method": "suix_getAllBalances",
+    "params": ["0x67b11c023bced7ae79530b653e81e37116836acf24d536e6ffbd4bf37159d3cf"],
+    "id": 1
+}

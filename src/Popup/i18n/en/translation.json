@@ -1,0 +1,2071 @@
+{
+  "components": {
+    "AccountAddressBookBottomSheet": {
+      "index": {
+        "title": "Address within the Account"
+      }
+    },
+    "AddressBookBottomSheet": {
+      "index": {
+        "addAddressButton": "Add address",
+        "title": "Address Book"
+      }
+    },
+    "AddressBookItem": {
+      "ManagePopover": {
+        "EditDialog": {
+          "index": {
+            "addressPlaceholder": "Address",
+            "labelPlaceholder": "Label",
+            "memoPlaceholder": "Memo (option)",
+            "submit": "Edit",
+            "title": "Edit an address"
+          }
+        },
+        "index": {
+          "delete": "Delete",
+          "deleteSnackbar": "Your address has been deleted",
+          "edit": "Edit"
+        }
+      }
+    },
+    "Fee": {
+      "components": {
+        "FeeSettingDialog": {
+          "index": {
+            "feeSettings": "Choose Tx fee"
+          }
+        },
+        "GasSettingDialog": {
+          "index": {
+            "gasSettings": "Gas settings",
+            "submitButton": "Submit"
+          }
+        }
+      },
+      "index": {
+        "average": "Average",
+        "fee": "Fee",
+        "gasSettings": "Gas settings",
+        "low": "Low",
+        "tiny": "Tiny"
+      }
+    },
+    "Header": {
+      "Drawer": {
+        "index": {
+          "addCustomChain": "Add Custom Chain",
+          "addressBook": "Address book",
+          "changePassword": "Change password",
+          "connectedSites": "Connected sites",
+          "currency": "Currency",
+          "darkMode": "Dark mode",
+          "expand": "Expand view",
+          "guide": "Guide",
+          "helpSupport": "Help & Support",
+          "language": "Language",
+          "ledger": "Ledger",
+          "lock": "Lock",
+          "provider": "Prioritize"
+        }
+      }
+    },
+    "Loading": {
+      "LedgerToTab": {
+        "index": {
+          "cancel": "Cancel",
+          "continue": "Continue",
+          "description": "Complete the process on browser tab"
+        }
+      }
+    },
+    "Lock": {
+      "LostDialog": {
+        "index": {
+          "description": "In case of lost password: back up your mnemonic phrase, delete Cosmostation browser extension, then re-install it. (Current imported wallets will be disconnected)",
+          "title": "SAVE YOUR MNEMONICS!"
+        }
+      },
+      "index": {
+        "lostButton": "I lost my password",
+        "passwordPlaceholder": "Password",
+        "unlockButton": "Unlock"
+      }
+    },
+    "ethereum": {
+      "Fee": {
+        "index": {
+          "average": "Average",
+          "fee": "Max fee",
+          "gasSettings": "Gas settings",
+          "low": "Low",
+          "tiny": "Tiny"
+        }
+      }
+    },
+    "requests": {
+      "AccessRequest": {
+        "index": {
+          "downDescription": "By approving this request, the website will:",
+          "downItem1": "Know your wallet address",
+          "downItem2": "Request signatures for transactions",
+          "downItem3": "Encrypt/Decrypt messages",
+          "upDescription1": "is",
+          "upDescription2": "requesting to connect to your ",
+          "upDescription3": " account"
+        }
+      },
+      "ActivateChainRequest": {
+        "index": {
+          "description1": "Do you want to activate",
+          "description2": "blockchain",
+          "description3": "to the Cosmostation?"
+        }
+      },
+      "LedgerPublicKeyRequest": {
+        "index": {
+          "cancelButton": "Cancel",
+          "completeButton": "Complete",
+          "step1Description": "Unlock your Ledger",
+          "step2Description1": "Open ",
+          "step2Description2": " app on Ledger",
+          "title": "Connect Ledger"
+        }
+      }
+    }
+  },
+  "pages": {
+    "Account": {
+      "Create": {
+        "Import": {
+          "Mnemonic": {
+            "entry": {
+              "accountNamePlaceholder": "Account name",
+              "done": "Done",
+              "hdPathSetting": "HD path setting",
+              "mnemonicPlaceholder": "Mnemonic phrase"
+            },
+            "layout": {
+              "title": "Import mnemonics"
+            }
+          }
+        },
+        "New": {
+          "Ledger": {
+            "entry": {
+              "accountNamePlaceholder": "Account name",
+              "done": "Done",
+              "guideButton": "Ledger setup guide",
+              "hdPathSetting": "HD path setting"
+            },
+            "layout": {
+              "title": "Create a new ledger account"
+            }
+          },
+          "Mnemonic": {
+            "Step1": {
+              "entry": {
+                "description": "Please enter account name.",
+                "next": "Next",
+                "placeholder": "Account name"
+              },
+              "layout": {
+                "title": "Create a new account"
+              }
+            },
+            "Step2": {
+              "entry": {
+                "12Words": "12 words",
+                "24Words": "24 words",
+                "copied": "Copied",
+                "copy": "Copy",
+                "description": "This phrase is the only way to recover your account. Do not share with anyone. Losing this mnemonics could lead to loss of your asset.",
+                "hdPathSetting": "HD path setting",
+                "next": "Next",
+                "seedPhrase": "Seed phrase"
+              },
+              "layout": {
+                "title": "Mnemonic Phrase"
+              }
+            },
+            "Step3": {
+              "entry": {
+                "description": "Enter your mnemonics below to make sure you saved mnemonics correctly",
+                "done": "Done"
+              },
+              "layout": {
+                "title": "Verify Mnemonics"
+              }
+            }
+          }
+        },
+        "entry": {
+          "createAccount": "Create a new account",
+          "createLedgerAccount": "Create a new ledger account",
+          "importMnemonic": "Import mnemonics",
+          "importPrivateKey": "Import Private Key"
+        },
+        "layout": {
+          "title": "Add Account"
+        }
+      },
+      "Initialize": {
+        "Complete": {
+          "entry": {
+            "description": "Welcome to the Interchain.",
+            "done": "Done",
+            "title": "Complete!"
+          }
+        },
+        "Import": {
+          "Mnemonic": {
+            "entry": {
+              "hdPathSetting": "HD path setting",
+              "mnemonicPlaceholder": "Mnemonic phrase",
+              "namePlaceholder": "Account name",
+              "next": "Next"
+            },
+            "layout": {
+              "title": "Restore with Mnemonics"
+            }
+          },
+          "PrivateKey": {
+            "entry": {
+              "accountName": "Account name",
+              "next": "Next",
+              "privateKey": "To restore with private key, please enter your private key from Cosmostation Wallet. (The private key is a 66-digit string starting with 0x)"
+            },
+            "layout": {
+              "title": "Restore with Private Key"
+            }
+          },
+          "Step2": {
+            "entry": {
+              "next": "Next"
+            },
+            "layout": {
+              "description": "Select chains to use with cosmostation wallet.",
+              "title": "Select a chain"
+            }
+          },
+          "Step3": {
+            "layout": {
+              "description": "Please enter at least 8 characters for your wallet password.",
+              "title": "Create password"
+            }
+          },
+          "entry": {
+            "mnemonic": "Restore with Mnemonics",
+            "privateKey": "Restore with Private Key"
+          },
+          "layout": {
+            "title": "Import Wallet"
+          }
+        },
+        "New": {
+          "Mnemonic": {
+            "Step1": {
+              "entry": {
+                "next": "Next",
+                "placeholder": "account name"
+              },
+              "layout": {
+                "description": "Please enter account name.",
+                "title": "Account name"
+              }
+            },
+            "Step2": {
+              "entry": {
+                "12Words": "12 words",
+                "24Words": "24 words",
+                "copied": "Copied",
+                "copy": "Copy",
+                "hdPathSetting": "HD path setting",
+                "next": "Next",
+                "seedPhrase": "Seed phrase"
+              },
+              "layout": {
+                "title": "Mnemonic phrase"
+              }
+            },
+            "Step3": {
+              "entry": {
+                "next": "Next"
+              },
+              "layout": {
+                "description": "Please enter your seed phrase below. Make sure you stored mnemonic phrases safely.",
+                "title": "Verify seed phrase"
+              }
+            },
+            "Step4": {
+              "entry": {
+                "next": "Next"
+              },
+              "layout": {
+                "description": "Select chains to use with cosmostation wallet.",
+                "title": "Select chains"
+              }
+            },
+            "Step5": {
+              "layout": {
+                "description": "Please enter a password for your wallet",
+                "title": "Create password"
+              }
+            }
+          }
+        },
+        "Welcome": {
+          "entry": {
+            "description1": "Gateway to the Interchain &",
+            "description2": "Ethereum ecosystem",
+            "permissionError": "Permission request denied. Please allow permissions to use the wallet.",
+            "startButton": "Start",
+            "termsAgreement1": "I have read and agree to the ",
+            "termsAgreement2": "Terms of use",
+            "title": "Welcome!"
+          }
+        },
+        "components": {
+          "Password": {
+            "index": {
+              "confirmPlaceholder": "Confirm password",
+              "newPlaceholder": "New password",
+              "next": "Next"
+            }
+          },
+          "SelectChain": {
+            "index": {
+              "placeholder": "Search a chain",
+              "removeAllowedChainError": "Please select more than 1 chain"
+            }
+          }
+        },
+        "entry": {
+          "createWallet": "Create Wallet",
+          "importWallet": "Import Wallet"
+        }
+      },
+      "Management": {
+        "components": {
+          "DraggableAccountList": {
+            "index": {
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "successSnackbar": "Accounts have been reordered successfully"
+            }
+          },
+          "ManagePopover": {
+            "ChangeNameDialog": {
+              "index": {
+                "submit": "Submit",
+                "title": "Rename Account"
+              }
+            },
+            "DeleteDialog": {
+              "index": {
+                "confirm": "Confirm",
+                "deleteSnackbar": "Your account has been deleted",
+                "placeholder": "Password",
+                "title": "Delete account",
+                "warning": "Even though you are removing this account you will able to re-derive it using your mnemonic in this or another account."
+              }
+            },
+            "ExportMnemonicDialog": {
+              "MnemonicView": {
+                "Header": {
+                  "index": {
+                    "copy": "Copy"
+                  }
+                },
+                "index": {
+                  "copied": "Copied",
+                  "done": "Done",
+                  "title": "Mnemonic phrases"
+                }
+              },
+              "index": {
+                "confirm": "Confirm",
+                "placeholder": "Password",
+                "title": "View mnemonics"
+              }
+            },
+            "ExportPrivateKeyDialog": {
+              "PrivateKeyView": {
+                "Header": {
+                  "index": {
+                    "copy": "Copy"
+                  }
+                },
+                "index": {
+                  "copied": "Copied",
+                  "done": "Done",
+                  "title": "View Private Key"
+                }
+              },
+              "index": {
+                "confirm": "Confirm",
+                "mnemonicWarning1": "This private key can only be used to import your ",
+                "mnemonicWarning2": "wallet.",
+                "placeholder": "Password",
+                "title": "View Private Key"
+              }
+            },
+            "index": {
+              "delete": "Delete account",
+              "rename": "Rename account",
+              "viewMnemonic": "View mnemonics",
+              "viewPrivateKey": "View private key"
+            }
+          }
+        },
+        "entry": {
+          "addAccount": "Add account"
+        },
+        "layout": {
+          "title": "Account Management"
+        }
+      },
+      "components": {
+        "HDPathDialog": {
+          "index": {
+            "confirm": "Done",
+            "description": "Below are the derivation paths for supported blockchains.",
+            "title": "HD path setting"
+          }
+        }
+      }
+    },
+    "Chain": {
+      "Aptos": {
+        "Coin": {
+          "Add": {
+            "entry": {
+              "addressPlaceholder": "Coin address",
+              "decimals": "Decimals",
+              "name": "Name",
+              "submitButton": "Submit",
+              "symbol": "Symbol",
+              "warning": "Anyone can create a coin, including creating fake versions of existing coins. Take extra cautions on scams and security risks."
+            }
+          }
+        }
+      },
+      "Cosmos": {
+        "Chain": {
+          "Add": {
+            "entry": {
+              "addChainSnackbar": "custom Chain added",
+              "addressPrefixPlaceholder": "Address prefix (e.g., cosmos)",
+              "baseDenomPlaceholder": "Denom (e.g., uatom)",
+              "chainID": {
+                "invalid": "Already registered"
+              },
+              "chainIdPlaceholder": "Chain id (e.g., cosmoshub-1)",
+              "chainNamePlaceholder": "Custom Chain name",
+              "coinGeckoIdPlaceholder": "Coingecko API id (option)",
+              "coinTypePlaceholder": "Coin type (option) (default: 118')",
+              "cosmWasmPlaceholder": "Cosmwasm (option)",
+              "decimalsPlaceholder": "Decimals (option) (default: 6)",
+              "displayDenomPlaceholder": "Currency symbol",
+              "explorerURLPlaceholder": "Explorer URL (option)",
+              "gasRateAveragePlaceholder": "Gas rate Average (option)",
+              "gasRateLowPlaceholder": "Gas rate Low (option)",
+              "gasRateTinyPlaceholder": "Gas rate Tiny (option)",
+              "imageURLPlaceholder": "Chain image URL (option)",
+              "restURLError": "Invalid Rest URL",
+              "restURLPlaceholder": "Rest URL",
+              "sendGasPlaceholder": "Send Gas value (option)",
+              "submitButton": "Add a custom chain",
+              "tokenImageURLPlaceholder": "Symbol image URL (option)",
+              "typePlaceholder": "Chain type (option) (e.g. ETHERMINT)",
+              "warning": "A malicious chain provider can lie about the state of the blockchain and record your chain activity. Only add custom chain you trust."
+            },
+            "layout": {
+              "title": "Add a Chain"
+            }
+          }
+        },
+        "NFT": {
+          "Add": {
+            "CW721": {
+              "Search": {
+                "entry": {
+                  "addNFTSnackbar": "NFT added",
+                  "contractAddressPlaceholder": "Enter the NFT contract address",
+                  "invalidAddress": "Invalid address",
+                  "invalidAddressTitle": "Invalid Contract Address",
+                  "networkError": "An error has occurred. please try again later",
+                  "networkErrorTitle": "Network Error",
+                  "noNFTsAvailable1": "No NFTs found",
+                  "noNFTsAvailable2": "No import-ready NFTs exist",
+                  "searchNFTSubText": "If the NFT you're looking for is not on the list, enter \"Contract address\".",
+                  "searchNFTTitle": "Search your NFTs",
+                  "submitButton": "Import NFT"
+                },
+                "layout": {
+                  "title": "Import NFTs"
+                }
+              },
+              "entry": {
+                "addressPlaceholder": "NFT contract address",
+                "imagePreview": "IMG Preview",
+                "invalidAddress": "Invalid address",
+                "invalidAddressTitle": "Invalid Contract Address",
+                "invalidOwnership": "The NFT is not owned by you for the given contract address or token ID.",
+                "invalidOwnershipTitle": "Ownership Mismatch",
+                "invalidSource": "NFT does not exist for the given contract address or token ID.",
+                "invalidSourceTitle": "No NFTs found",
+                "invalidTokenId": "Invalid token ID",
+                "invalidTokenIdTitle": "Invalid Token ID",
+                "networkError": "An error has occurred. please try again later",
+                "networkErrorTitle": "Network Error",
+                "preview": "NFT Preview",
+                "previewSubText": "When you enter your own NFT information, the image is displayed",
+                "submitButton": "Add custom NFT",
+                "tokenIdPlaceholder": "NFT token ID"
+              },
+              "layout": {
+                "title": "Import NFTs"
+              }
+            }
+          }
+        },
+        "Token": {
+          "Add": {
+            "CW20": {
+              "Search": {
+                "entry": {
+                  "addTokenSnackbar": "Token added",
+                  "importCustomTokenButton": "Import a custom token",
+                  "searchPlaceholder": "Search tokens",
+                  "submitButton": "Import token",
+                  "tokenIconText1": "Add custom tokens to manage on",
+                  "tokenIconText2": "Cosmostation Extension.",
+                  "warning": "Cosmostation provides a list of selected tokens across multiple networks. If the token you're looking for is not on the list, click \"Import a custom token\"."
+                },
+                "layout": {
+                  "title": "Import tokens"
+                }
+              },
+              "entry": {
+                "addTokenErrorSnackbar": "Failed to add",
+                "addTokenSnackbar": "Token added",
+                "addressPlaceholder": "Token contract address",
+                "imageURLPlaceholder": "Token Logo URL (option)",
+                "submitButton": "Add custom token",
+                "warning": "Anyone can create a token, including creating fake versions of existing tokens. Take extra cautions on scams and security risks."
+              }
+            }
+          }
+        }
+      },
+      "Ethereum": {
+        "NFT": {
+          "Add": {
+            "entry": {
+              "addNFTSnackbar": "NFT added",
+              "addressPlaceholder": "NFT contract address",
+              "copied": "Copied",
+              "data": "Data",
+              "imagePreview": "IMG Preview",
+              "information": "If the token you're looking for is not on the list, click \"Import a custom NFT\"",
+              "invalidAddress": "Invalid address",
+              "invalidAddressTitle": "Invalid Contract Address",
+              "invalidOwnership": "The NFT is not owned by you for the given contract address or token ID.",
+              "invalidOwnershipTitle": "Ownership Mismatch",
+              "invalidSource": "NFT does not exist for the given contract address or token ID.",
+              "invalidSourceTitle": "No NFTs found",
+              "invalidTokenId": "Invalid token ID",
+              "invalidTokenIdTitle": "Invalid Token ID",
+              "networkError": "An error has occurred. please try again later",
+              "networkErrorTitle": "Network Error",
+              "preview": "NFT Preview",
+              "previewSubText": "When you enter your own NFT information, the image is displayed",
+              "submitButton": "Add custom NFT",
+              "tokenIdPlaceholder": "NFT token ID",
+              "uri": "URI"
+            },
+            "layout": {
+              "title": "Import NFT"
+            }
+          }
+        },
+        "Network": {
+          "Add": {
+            "entry": {
+              "addNetworkSnackbar": "Network added",
+              "chainIdPlaceholder": "Chain id (eg. 0x1 or 1)",
+              "coinGeckoIdPlaceholder": "Coingecko API id (option)",
+              "displayDenomPlaceholder": "Currency symbol (option)",
+              "explorerURLPlaceholder": "Explorer URL (option)",
+              "imageURLPlaceholder": "Chain image URL (option)",
+              "networkNamePlaceholder": "Network name",
+              "rpcURLPlaceholder": "RPC URL",
+              "submitButton": "Add a network",
+              "tokenImageURLPlaceholder": "Symbol image URL (option)",
+              "warning": "A malicious network provider can lie about the state of the blockchain and record your network activity. Only add custom networks you trust."
+            },
+            "layout": {
+              "title": "Add a network"
+            }
+          }
+        },
+        "Token": {
+          "Add": {
+            "ERC20": {
+              "Search": {
+                "entry": {
+                  "addTokenSnackbar": "Token added",
+                  "importCustomTokenButton": "Import a custom token",
+                  "searchPlaceholder": "Search tokens",
+                  "submitButton": "Import token",
+                  "tokenIconText1": "Add custom tokens to manage on",
+                  "tokenIconText2": "Cosmostation Extension.",
+                  "warning": "Cosmostation provides a list of selected tokens across multiple networks. If the token you're looking for is not on the list, click \"Import a custom token\"."
+                },
+                "layout": {
+                  "title": "Import tokens"
+                }
+              },
+              "entry": {
+                "addTokenSnackbar": "Token added",
+                "addressPlaceholder": "Token contract address",
+                "decimalsPlaceholder": "Token decimals",
+                "displayDenomPlaceholder": "Token symbol",
+                "submitButton": "Add custom token",
+                "warning": "Anyone can create a token, including creating fake versions of existing tokens. Take extra cautions on scams and security risks."
+              },
+              "layout": {
+                "title": "Import tokens"
+              }
+            }
+          }
+        }
+      },
+      "Management": {
+        "Use": {
+          "entry": {
+            "removeAllowedChainError": "Please select more than 1 chain",
+            "searchPlaceholder": "Search chain"
+          },
+          "layout": {
+            "title": "Chain management"
+          }
+        },
+        "entry": {
+          "addChain": "Add a custom chain",
+          "addCosmosChain": "Add a custom Cosmos chain",
+          "addEthereumNetwork": "Add a custom EVM network",
+          "chainManagement": "Chain management"
+        },
+        "layout": {
+          "title": "Management"
+        }
+      }
+    },
+    "Dashboard": {
+      "components": {
+        "ChainItem": {
+          "index": {
+            "inactiveNetwork": "Inactive Network!",
+            "networkError": "Network Error"
+          }
+        }
+      }
+    },
+    "Popup": {
+      "Aptos": {
+        "Sign": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "message": "Message",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request"
+          }
+        },
+        "Transaction": {
+          "entry": {
+            "average": "Average",
+            "cancelButton": "Cancel",
+            "high": "High",
+            "low": "Low",
+            "maxFee": "Max fee",
+            "signButton": "Sign"
+          }
+        }
+      },
+      "Bitcoin": {
+        "Send": {
+          "entry": {
+            "cancel": "Cancel",
+            "expectedFee": "Expected fee",
+            "failedCreateTxHex": "Failed to create transaction hex",
+            "failedLoadFee": "Failed to load fee",
+            "input": "Input",
+            "invalidAddress": "Invalid address",
+            "noAmount": "Invalid send amount",
+            "noAvailableAmount": "No available amount",
+            "output": "Output",
+            "sign": "Sign"
+          }
+        },
+        "SignPsbt": {
+          "entry": {
+            "cancel": "Cancel",
+            "expectedFee": "Expected fee",
+            "failedCreateTxHex": "Failed to create transaction hex",
+            "failedLoadFee": "Failed to load fee",
+            "input": "Input",
+            "invalidAddress": "Invalid address",
+            "invalidSender": "Invalid sender",
+            "noAmount": "Invalid send amount",
+            "noAvailableAmount": "No available amount",
+            "output": "Output",
+            "sign": "Sign"
+          }
+        },
+        "SwitchNetwork": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "description": "Switching to a different network will disconnect your current network. Are you sure you want to switch networks?",
+            "question": "Switch network",
+            "switchButton": "Switch"
+          }
+        }
+      },
+      "Cosmos": {
+        "AddChain": {
+          "entry": {
+            "description1": "would",
+            "description2": "like to add blockchain",
+            "description3": "to Cosmostation wallet.",
+            "description4": ""
+          }
+        },
+        "AddNFTs": {
+          "entry": {
+            "addButton": "Add NFTs",
+            "addNFTs": "Add Suggested NFTs",
+            "cancelButton": "Cancel",
+            "networkError": "Network Error",
+            "notOwned": "Can't import NFTs that are not owned by you.",
+            "question": "Would you like to import these NFTs?"
+          }
+        },
+        "AddTokens": {
+          "entry": {
+            "addButton": "Add tokens",
+            "addTokens": "Add Suggested Tokens",
+            "cancelButton": "Cancel",
+            "question": "Would you like to import these tokens?"
+          }
+        },
+        "Sign": {
+          "Amino": {
+            "components": {
+              "TxMessage": {
+                "messages": {
+                  "Commission": {
+                    "index": {
+                      "title": "Claim Commission",
+                      "validatorAddress": "Validator address"
+                    }
+                  },
+                  "Contract": {
+                    "index": {
+                      "contract": "Contract Address",
+                      "funds": "Funds",
+                      "msg": "Msg",
+                      "sender": "Sender Address"
+                    }
+                  },
+                  "IBCSend": {
+                    "index": {
+                      "amount": "Amount",
+                      "memo": "Memo",
+                      "receiver": "Receiver Address",
+                      "sender": "Sender Address",
+                      "sourceChannel": "Channel"
+                    }
+                  },
+                  "Reward": {
+                    "index": {
+                      "delegatorAddress": "Delegator address",
+                      "title": "Claim reward",
+                      "validatorAddress": "Validator address"
+                    }
+                  },
+                  "Send": {
+                    "index": {
+                      "amount": "Amount",
+                      "fromAddress": "From address",
+                      "toAddress": "To address"
+                    }
+                  },
+                  "Swap": {
+                    "index": {
+                      "expectedOutput": "Expected Output",
+                      "poolId": "Pool Id",
+                      "routes": "Route",
+                      "swapAmount": "Swap Amount",
+                      "tokenIn": "From",
+                      "tokenOut": "To"
+                    }
+                  }
+                }
+              }
+            },
+            "entry": {
+              "cancelButton": "Cancel",
+              "dataTab": "Data",
+              "detailTab": "Details",
+              "failedTransfer": "Failed to transfer",
+              "insufficientFeeAmount": "Insufficient fee",
+              "signButton": "Sign"
+            }
+          },
+          "Direct": {
+            "components": {
+              "TxMessage": {
+                "messages": {
+                  "Commission": {
+                    "index": {
+                      "title": "Claim Commission",
+                      "validatorAddress": "Validator address"
+                    }
+                  },
+                  "IBCSend": {
+                    "index": {
+                      "amount": "Amount",
+                      "fromAddress": "From address",
+                      "memo": "Memo",
+                      "sourceChannel": "Channel",
+                      "toAddress": "To address"
+                    }
+                  },
+                  "Send": {
+                    "index": {
+                      "amount": "Amount",
+                      "fromAddress": "From address",
+                      "toAddress": "To address"
+                    }
+                  }
+                }
+              }
+            },
+            "entry": {
+              "cancelButton": "Cancel",
+              "confirmButton": "Confirm",
+              "dataTab": "Data",
+              "decodedDataTab": "Decoded",
+              "detailTab": "Details",
+              "failedTransfer": "Failed to transfer",
+              "insufficientFeeAmount": "Insufficient fee",
+              "invalidAccountType": "Invalid account type (Ledger)"
+            }
+          },
+          "Message": {
+            "entry": {
+              "cancelButton": "Cancel",
+              "dataTab": "Data",
+              "detailTab": "Details",
+              "failedTransfer": "Failed to transfer",
+              "signButton": "Sign"
+            }
+          },
+          "components": {
+            "DecodedTx": {
+              "index": {
+                "warning": "Some transactions may not show data because of decryption failures, but this doesn't affect the transaction execution."
+              }
+            },
+            "Memo": {
+              "index": {
+                "memo": "Memo",
+                "memoPlaceholder": "Memo (option)"
+              }
+            }
+          }
+        }
+      },
+      "Ethereum": {
+        "AddNetwork": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "chainId": "Chain ID",
+            "confirmButton": "Confirm",
+            "displayDenom": "Currency symbol",
+            "explorerURL": "Block explorer URL",
+            "networkName": "Network name",
+            "networkURL": "Network URL",
+            "question": "Allow this site to add the network?",
+            "warning": "Cosmostation does not validate custom network."
+          }
+        },
+        "AddTokens": {
+          "entry": {
+            "addButton": "Add tokens",
+            "addTokens": "Add Suggested Tokens",
+            "cancelButton": "Cancel",
+            "question": "Would you like to import these tokens?"
+          }
+        },
+        "PersonalSign": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "message": "Message",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request",
+            "warningText": "You are signing."
+          }
+        },
+        "Sign": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "message": "Message",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request",
+            "warningText": "Signing this message can be dangerous. This signature could potentially perform any operation on your account's behalf, including granting complete control of your account and all of its assets to the requesting site. Only sign this message if you know what you're doing or completely trust the requesting site."
+          }
+        },
+        "SignTransaction": {
+          "components": {
+            "FeeEIP1559Dialog": {
+              "index": {
+                "maxFeePerGasSetting": "Max Fee Per Gas Setting",
+                "submitButton": "Save"
+              }
+            },
+            "GasPriceDialog": {
+              "index": {
+                "gasPriceSetting": "Gas Price Setting",
+                "submitButton": "Save"
+              }
+            },
+            "TxMessage": {
+              "messages": {
+                "Approve": {
+                  "index": {
+                    "amount": "Amount",
+                    "grantedAddress": "Granted to",
+                    "tokenAddress": "Token"
+                  }
+                },
+                "Deploy": {
+                  "index": {
+                    "data": "Data"
+                  }
+                },
+                "Interact": {
+                  "index": {
+                    "contractAddress": "Contract address",
+                    "contractMethod": "Contract Method",
+                    "data": "Data",
+                    "expectedOutput": "Expected Output",
+                    "fromToken": "From",
+                    "receiverAddress": "Receiver Address",
+                    "swapAmount": "Swap Amount",
+                    "toToken": "To"
+                  }
+                },
+                "NFT": {
+                  "ERC1155": {
+                    "SafeTransferFrom": {
+                      "index": {
+                        "contractAddress": "Contract address",
+                        "fromAddress": "From address",
+                        "toAddress": "To address"
+                      }
+                    }
+                  },
+                  "ERC721": {
+                    "TransferFrom": {
+                      "index": {
+                        "contractAddress": "Contract address",
+                        "fromAddress": "From address",
+                        "toAddress": "To address"
+                      }
+                    }
+                  }
+                },
+                "Send": {
+                  "index": {
+                    "amount": "Amount",
+                    "fromAddress": "From address",
+                    "toAddress": "To address"
+                  }
+                },
+                "Transfer": {
+                  "index": {
+                    "amount": "Amount",
+                    "toAddress": "To address",
+                    "tokenAddress": "Token"
+                  }
+                },
+                "TransferFrom": {
+                  "index": {
+                    "amount": "Amount",
+                    "fromAddress": "From address",
+                    "toAddress": "To address",
+                    "tokenAddress": "Token"
+                  }
+                }
+              }
+            }
+          },
+          "entry": {
+            "average": "Average",
+            "cancelButton": "Cancel",
+            "current": "Current",
+            "fee": "Max fee",
+            "gasSettings": "Gas settings",
+            "insufficientAmount": "Insufficient amount",
+            "low": "Low",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request",
+            "tiny": "Tiny",
+            "total": "Total"
+          }
+        },
+        "SignTypedData": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "message": "Message",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request"
+          }
+        },
+        "SwitchNetwork": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "description": "This will switch the selected network within Cosmostation to a previously selected network.",
+            "question": "Allow this site to switch the network?",
+            "switchButton": "Switch"
+          }
+        },
+        "Transaction": {
+          "components": {
+            "TxMessage": {
+              "components": {
+                "CopyButton": {
+                  "index": {
+                    "copied": "Copied"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Sui": {
+        "SignMessage": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "message": "Message",
+            "signButton": "Sign",
+            "signatureRequest": "Signature request"
+          }
+        },
+        "Transaction": {
+          "entry": {
+            "cancelButton": "Cancel",
+            "expectedFee": "Expected fee",
+            "maxFee": "Max fee",
+            "signButton": "Sign"
+          }
+        }
+      },
+      "TxReceipt": {
+        "Entry": {
+          "Aptos": {
+            "entry": {
+              "blockHeight": "Block Height",
+              "confirm": "Confirm",
+              "copied": "Copied",
+              "date": "Date",
+              "expirationDate": "Expiration Date",
+              "explorer": "View on Explorer",
+              "failure": "Failure",
+              "fee": "Fee",
+              "information": "Information",
+              "network": "Network",
+              "networkError": "Network Error",
+              "networkErrorDescription": "Fail to get Transaction Data",
+              "pending": "Pending",
+              "status": "Status",
+              "success": "Success",
+              "transactionConfirmed": "Transaction Confirmed",
+              "transactionReceipt": "Transaction Receipt",
+              "txHash": "Tx Hash",
+              "version": "Version ID",
+              "vmStatus": "VM Status"
+            }
+          },
+          "Cosmos": {
+            "entry": {
+              "blockHeight": "Block Height",
+              "confirm": "Confirm",
+              "copied": "Copied",
+              "date": "Date",
+              "explorer": "View on Explorer",
+              "failure": "Failure",
+              "fees": "Fees",
+              "gas": "Gas used / wanted",
+              "information": "Information",
+              "network": "Network",
+              "networkError": "Network Error",
+              "networkErrorDescription": "Fail to get Transaction Data",
+              "pending": "Pending",
+              "status": "Status",
+              "success": "Success",
+              "transactionConfirmed": "Transaction Confirmed",
+              "transactionReceipt": "Transaction Receipt",
+              "txHash": "Tx Hash"
+            }
+          },
+          "Ethereum": {
+            "entry": {
+              "blockNumber": "Block Number",
+              "confirm": "Confirm",
+              "copied": "Copied",
+              "date": "Date",
+              "effectiveGasPrice": "Effective Gas Price",
+              "explorer": "View on Explorer",
+              "failure": "Failure",
+              "fee": "Fee",
+              "gas": "Gas used",
+              "information": "Information",
+              "network": "Network",
+              "networkError": "Network Error",
+              "networkErrorDescription": "Fail to get Transaction Data",
+              "pending": "Pending",
+              "status": "Status",
+              "success": "Success",
+              "transactionConfirmed": "Transaction Confirmed",
+              "transactionReceipt": "Transaction Receipt",
+              "txHash": "Tx Hash"
+            }
+          },
+          "Sui": {
+            "entry": {
+              "checkPoint": "Check Point",
+              "confirm": "Confirm",
+              "copied": "Copied",
+              "date": "Date",
+              "digest": "Digest Hash",
+              "epoch": "Epoch",
+              "explorer": "View on Explorer",
+              "failure": "Failure",
+              "fee": "Fee",
+              "information": "Information",
+              "network": "Network",
+              "networkError": "Network Error",
+              "networkErrorDescription": "Fail to get Transaction Data",
+              "pending": "Pending",
+              "status": "Status",
+              "success": "Success",
+              "transactionConfirmed": "Transaction Confirmed",
+              "transactionReceipt": "Transaction Receipt"
+            }
+          },
+          "components": {
+            "CopyButton": {
+              "index": {
+                "copied": "Copied"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Restore": {
+      "entry": {
+        "passwordConfirmPlaceholder": "Confirm password",
+        "passwordPlaceholder": "Password",
+        "restoreButton": "Restore",
+        "restoreStringPlaceholder": "To restore password, please enter your mnemonic phrases from Cosmostation wallet."
+      },
+      "layout": {
+        "title": "Restore Wallet"
+      }
+    },
+    "Setting": {
+      "AddressBook": {
+        "Add": {
+          "entry": {
+            "addressPlaceholder": "Address",
+            "labelPlaceholder": "Label",
+            "memoPlaceholder": "Memo (option)",
+            "save": "Save"
+          },
+          "layout": {
+            "title": "Add address"
+          }
+        },
+        "entry": {
+          "addAddressButton": "Add address"
+        },
+        "layout": {
+          "title": "Address book"
+        }
+      },
+      "ChangeCurrency": {
+        "layout": {
+          "title": "Currency"
+        }
+      },
+      "ChangeLanguage": {
+        "layout": {
+          "title": "Language"
+        }
+      },
+      "ChangePassword": {
+        "entry": {
+          "changePasswordSnackbar": "Password changed",
+          "confirmNewPasswordPlaceholder": "Confirm password",
+          "currentPasswordPlaceholder": "Current password",
+          "done": "Done",
+          "newPasswordPlaceholder": "New password"
+        },
+        "layout": {
+          "title": "Change password"
+        }
+      },
+      "ConnectedSites": {
+        "layout": {
+          "title": "Connected sites"
+        }
+      },
+      "Ledger": {
+        "layout": {
+          "title": "Ledger"
+        }
+      },
+      "Provider": {
+        "entry": {
+          "description": "Prioritize service gets activated when the selected wallet extensions are switched off on chrome://extensions or not installed on your PC"
+        },
+        "layout": {
+          "title": "Prioritize"
+        }
+      }
+    },
+    "Wallet": {
+      "NFTDetail": {
+        "Entry": {
+          "cosmos": {
+            "components": {
+              "NFTInfoItem": {
+                "index": {
+                  "attributes": "Attributes",
+                  "collection": "Collection",
+                  "contractAddress": "Contract address",
+                  "copied": "Copied",
+                  "description": "Description",
+                  "name": "Name",
+                  "numberOfNFT": "Number of NFT",
+                  "ownerAddress": "Owner",
+                  "source": "Source",
+                  "symbol": "Symbol",
+                  "tokenId": "Token ID",
+                  "tokenType": "Token Standard",
+                  "url": "URL"
+                }
+              }
+            },
+            "index": {
+              "information": "Cosmostation wallet displays NFT information from the source URL and does not have ownership of your NFTs.",
+              "networkError": "Network Error",
+              "notOwnedNFT": "You cannot transfer NFTs that you do not own.",
+              "send": "NFT Send"
+            }
+          },
+          "ethereum": {
+            "components": {
+              "NFTInfoItem": {
+                "index": {
+                  "attributes": "Attributes",
+                  "balance": "Balance",
+                  "contractAddress": "Contract address",
+                  "copied": "Copied",
+                  "description": "Description",
+                  "ownerAddress": "Owner",
+                  "source": "Source",
+                  "tokenId": "Token ID",
+                  "tokenType": "Token Standard",
+                  "url": "URL"
+                }
+              }
+            },
+            "index": {
+              "information": "Cosmostation wallet displays NFT information from the source URL and does not have ownership of your NFTs.",
+              "notOwnedNFT": "You cannot transfer NFTs that you do not own.",
+              "send": "NFT Send",
+              "untransferableObject": "Untransferable object"
+            }
+          },
+          "sui": {
+            "components": {
+              "NFTInfoItem": {
+                "index": {
+                  "copied": "Copied",
+                  "creator": "Created by",
+                  "description": "Description",
+                  "objectId": "Object Id",
+                  "ownerAddress": "Owner",
+                  "url": "URL"
+                }
+              }
+            },
+            "index": {
+              "send": "NFT Send",
+              "untransferableObject": "Untransferable object"
+            }
+          }
+        },
+        "layout": {
+          "title": "NFT Detail"
+        }
+      },
+      "NFTSend": {
+        "Entry": {
+          "Cosmos": {
+            "index": {
+              "insufficientAmount": "Insufficient amount",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "memoPlaceholder": "Memo (option)",
+              "networkError": "Network Error",
+              "notOwnedNFT": "You cannot transfer NFTs that you do not own.",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          },
+          "Ethereum": {
+            "components": {
+              "NFTButton": {
+                "index": {
+                  "balance": "Balance"
+                }
+              },
+              "NFTPopover": {
+                "components": {
+                  "NFTItem": {
+                    "index": {
+                      "balance": "Balance"
+                    }
+                  }
+                }
+              }
+            },
+            "index": {
+              "fee": "Fee",
+              "insufficientAmount": "Insufficient amount",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "invalidSendNFTQuantity": "Invalid NFT Amount",
+              "networkError": "Network Error",
+              "notOwnedNFT": "You cannot transfer NFTs that you do not own.",
+              "quantityPlaceholder": "Quantity",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          },
+          "Sui": {
+            "index": {
+              "fee": "Fee",
+              "insufficientAmount": "Insufficient amount",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          }
+        },
+        "layout": {
+          "title": "NFT Send"
+        }
+      },
+      "OsmosisSwap": {
+        "components": {
+          "CoinListBottomSheet": {
+            "index": {
+              "searchPlaceholder": "Search",
+              "title": "Select a coin"
+            }
+          },
+          "SlippageSettingDialog": {
+            "confirm": "Confirm",
+            "slippageTolerance": "Slippage tolerance",
+            "title": "Setting",
+            "toleranceInfo": "Your transaction will revert if the price changes unfavorably by more than this percentage."
+          }
+        },
+        "entry": {
+          "availableAmount": "Available",
+          "excessiveSwap": "Can't swap Token more than Token amounts in the pool",
+          "expectedOutput": "Expected Output",
+          "insufficientAmount": "Insufficient amount",
+          "insufficientFeeAmount": "Insufficient fee",
+          "invalidAmount": "Invalid amount",
+          "invalidOutputAmount": "Invalid output amount",
+          "invalidPriceImpact": "Too high Price Impact",
+          "minimumReceived": "Minimum received after slippage",
+          "networkError": "Network Error",
+          "priceImpact": "Price Impact",
+          "swapButton": "Swap",
+          "swapFee": "Swap Fee",
+          "title": "Swap"
+        }
+      },
+      "Receive": {
+        "Entry": {
+          "Aptos": {
+            "address": "Address",
+            "copied": "Copied",
+            "scanQrCode": "Scan QR code"
+          },
+          "Bitcoin": {
+            "address": "Address",
+            "copied": "Copied",
+            "scanQrCode": "Scan QR code"
+          },
+          "Cosmos": {
+            "address": "Address",
+            "copied": "Copied",
+            "scanQrCode": "Scan QR code"
+          },
+          "Ethereum": {
+            "address": "Address",
+            "copied": "Copied",
+            "scanQrCode": "Scan QR code"
+          },
+          "Sui": {
+            "address": "Address",
+            "copied": "Copied",
+            "scanQrCode": "Scan QR code"
+          }
+        },
+        "layout": {
+          "title": "Deposit"
+        }
+      },
+      "Send": {
+        "Entry": {
+          "Aptos": {
+            "components": {
+              "CoinListBottomSheet": {
+                "index": {
+                  "searchPlaceholder": "Search",
+                  "title": "Select a coin"
+                }
+              }
+            },
+            "index": {
+              "amountPlaceholder": "Amount",
+              "insufficientAmount": "Insufficient amount",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          },
+          "Bitcoin": {
+            "components": {
+              "ConfirmDialog": {
+                "index": {
+                  "cancel": "Cancel",
+                  "confirm": "Confirm",
+                  "confirmText": "Are you sure you want to send?"
+                }
+              }
+            },
+            "index": {
+              "amountPlaceholder": "Amount",
+              "failedCreateTxHex": "Failed to create transaction hex",
+              "failedLoadFee": "Network error",
+              "failureSend": "Unknown error",
+              "fee": "Fee",
+              "invalidAddress": "Invalid address",
+              "memoMaxLength": "OP_RETURN is too long (max: 80 bytes)",
+              "memoPlaceholder": "OP_RETURN (option)",
+              "noAmount": "No amount",
+              "noAvailableAmount": "Insufficient amount",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send",
+              "successSend": "Success"
+            }
+          },
+          "Cosmos": {
+            "components": {
+              "CoinListBottomSheet": {
+                "index": {
+                  "searchPlaceholder": "Search",
+                  "title": "Select a coin"
+                }
+              },
+              "CoinOrTokenPopover": {
+                "components": {
+                  "TokenButton": {
+                    "index": {
+                      "available": "Available"
+                    }
+                  }
+                },
+                "index": {
+                  "available": "Available"
+                }
+              },
+              "IBCSend": {
+                "components": {
+                  "RecipientIBCBottomSheet": {
+                    "index": {
+                      "searchPlaceholder": "Search",
+                      "title": "Select a chain"
+                    }
+                  }
+                },
+                "index": {
+                  "amountPlaceholder": "Amount",
+                  "available": "Available",
+                  "bankLocked": "IBC Send functionality is currently disabled. It can be activated later through on-chain governance.",
+                  "exchangeWarning": "IBC transactions are NOT supported on centralized exchanges.",
+                  "ibcWarningHeadertitle": "IBC Send is not supported",
+                  "ibcWarningSubtitle": "No coin or token available for IBC Send.",
+                  "insufficientAmount": "Insufficient amount",
+                  "insufficientFeeAmount": "Insufficient fee",
+                  "invalidAddress": "Invalid address",
+                  "invalidAmount": "Invalid amount",
+                  "memoPlaceholder": "Memo (option)",
+                  "recipientAddressPlaceholder": "Recipient address",
+                  "sendButton": "Send",
+                  "timeoutHeightError": "Network Error"
+                }
+              },
+              "Send": {
+                "index": {
+                  "amountPlaceholder": "Amount",
+                  "available": "Available",
+                  "bankLocked": "Send functionality is currently disabled. It can be activated later through on-chain governance.",
+                  "insufficientAmount": "Insufficient amount",
+                  "insufficientFeeAmount": "Insufficient fee",
+                  "invalidAddress": "Invalid address",
+                  "invalidAmount": "Invalid amount",
+                  "memoPlaceholder": "Memo (option)",
+                  "recipientAddressPlaceholder": "Recipient address",
+                  "sendButton": "Send"
+                }
+              }
+            },
+            "index": {
+              "ibcSend": "IBC Send",
+              "send": "Send"
+            }
+          },
+          "Ethereum": {
+            "components": {
+              "CoinButton": {
+                "index": {
+                  "available": "Available"
+                }
+              },
+              "CoinListBottomSheet": {
+                "index": {
+                  "searchPlaceholder": "Search",
+                  "title": "Select a coin"
+                }
+              }
+            },
+            "index": {
+              "amountPlaceholder": "Amount",
+              "bankLocked": "Send functionality is currently disabled. It can be activated later through on-chain governance.",
+              "insufficientAmount": "Insufficient amount",
+              "insufficientFee": "Insufficient fee",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          },
+          "Sui": {
+            "components": {
+              "CoinButton": {
+                "index": {
+                  "available": "Available"
+                }
+              },
+              "CoinListBottomSheet": {
+                "index": {
+                  "searchPlaceholder": "Search",
+                  "title": "Select a coin"
+                }
+              },
+              "CoinPopover": {
+                "components": {
+                  "CoinItem": {
+                    "index": {
+                      "available": "Available"
+                    }
+                  }
+                }
+              }
+            },
+            "index": {
+              "amountPlaceholder": "Amount",
+              "insufficientAmount": "Insufficient amount",
+              "invalidAddress": "Invalid address",
+              "invalidAmount": "Invalid amount",
+              "recipientAddressPlaceholder": "Recipient address",
+              "sendButton": "Send"
+            }
+          }
+        },
+        "layout": {
+          "title": "Send"
+        }
+      },
+      "Swap": {
+        "components": {
+          "CoinListBottomSheet": {
+            "index": {
+              "searchPlaceholder": "Search",
+              "title": "Select a coin"
+            }
+          },
+          "NoticeBottomSheet": {
+            "index": {
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "title": "Notice"
+            }
+          },
+          "SlippageSettingDialog": {
+            "confirm": "Confirm",
+            "slippageTolerance": "Slippage tolerance",
+            "title": "Setting",
+            "toleranceInfo": "Your transaction will revert if the price changes unfavorably by more than this percentage."
+          },
+          "SwapCoinContainer": {
+            "components": {
+              "ChainListBottomSheet": {
+                "components": {
+                  "ChainItem": {
+                    "index": {
+                      "unAvailable1": "Swaps to",
+                      "unAvailable2": "coming soon"
+                    }
+                  }
+                },
+                "index": {
+                  "chainBottomListTitle": "Select a chain",
+                  "searchChainPlaceholder": "Search chains"
+                }
+              },
+              "TokenListBottomSheet": {
+                "index": {
+                  "searchTokenPlaceholder": "Search tokens",
+                  "tokenBottomListTitle": "Select a token"
+                }
+              }
+            },
+            "index": {
+              "availableAmount": "Available",
+              "balance": "Balance",
+              "selectChain": "Select chain",
+              "selectCoin": "Select token"
+            }
+          }
+        },
+        "entry": {
+          "allowanceWarning": "Swap Router uses signed permit approvals. This allows you to approve smart contract access to your selected tokens and swap in one single transaction.",
+          "availableAmount": "Available",
+          "balanceWarningDescription1": "You do not have enough",
+          "balanceWarningDescription2": " to cover the swap amount and the estimated gas costs for this transfer. Set your input amount to",
+          "balanceWarningDescription3": "or below to cover gas costs.",
+          "excessiveSwap": "Can't swap Token more than Token amounts in the pool",
+          "exchangeRate": "Exchange Rate",
+          "expectedOutput": "Expected Output",
+          "gasFee": "Gas Fee",
+          "gasFees": "Gas fees before refund",
+          "gasFeesInfo": "We overstimate gas by 50% to guarantee your trade. Any gas we don’t use will be refunded by Axelar.",
+          "ibcRelayingTimeInfo": "IBC transfers typically take 10-30 seconds, but delays can occur due to relayer issues, especially on low IBC volume chains.",
+          "insufficientAmount": "Insufficient amount",
+          "insufficientFeeAmount": "Insufficient fee",
+          "invalidAmount": "Invalid amount",
+          "invalidOutputAmount": "Invalid output amount",
+          "invalidSwapTx": "Invalid tx data",
+          "lessThanFeeWarningDescription1": "You do not have enough balance to cover the estimated gas costs for this transaction. Make sure you have more than",
+          "lessThanFeeWarningDescription2": "before trying again.",
+          "liquidityWarning": "There will be a large difference between your input and output values due to current liquidity.",
+          "minimumReceived": "Minimum received after slippage",
+          "minutes": "minutes",
+          "multiTxSwap": "Swap with multiple transactions is unavailable",
+          "multiTxSwapError": "This swap requires multiple transactions",
+          "networkError": "Network Error",
+          "osmosisFallbackAddress": "Osmosis Fallback Address",
+          "oversizedSwap": "Oversized Swap",
+          "permissionButton": "Give permission to use tokens",
+          "priceImpact": "Price Impact",
+          "processingTime": "Estimated processing time",
+          "receiveWarningMessage": "Tx may revert and return axlUSDC on the destination chain if market volatility is high. You can swap axlUSDC to desired token when this happens.",
+          "squidSwapNoticeDescription": "When a user selects a Source Chain that is not in coinType 118 address, users need to have a fallback address. In case of encountering an issue during the swap, users are able to recover the funds from the fallback address or another coinType 118 address \n\nCosmostation uses the Osmosis wallet address as  a fallback address, and the current fallback address of the user is the following",
+          "swapButton": "Swap",
+          "swapButtonOn": "Swap on",
+          "swapFee": "Swap Fee",
+          "swapInfoDescription1": "Due to slippage",
+          "swapInfoDescription2": ", the final amount you receive and the estimated amount may differ. You will receive at least",
+          "swapInfoDescription3": "",
+          "swapVenue": "Swap Venue",
+          "title": "Swap",
+          "txSizeWarning": "Transaction size is currently limited to $10,000. Please decrease the size of your transaction and try again."
+        },
+        "index": {
+          "fetchingData": "Fetching Data",
+          "networkError": "Network Error"
+        }
+      },
+      "components": {
+        "Header": {
+          "AccountButton": {
+            "ConnectDialog": {
+              "index": {
+                "connect": "Connect",
+                "connectDescription1": "You are not connected to this site.",
+                "connectDescription2": "Do you want to connect?",
+                "disconnect": "Disconnect",
+                "disconnectDescription1": "You wallet is connected to this site.",
+                "disconnectDescription2": "Do you want to disconnect?"
+              }
+            },
+            "index": {
+              "connected": "Connected",
+              "notConnected": "Not Connected"
+            }
+          },
+          "AccountPopover": {
+            "index": {
+              "title": "Select account"
+            }
+          },
+          "ChainPopover": {
+            "index": {
+              "title": "Select a chain"
+            }
+          },
+          "NetworkPopover": {
+            "index": {
+              "customNetwork": "Custom network",
+              "title": "Select a network"
+            }
+          }
+        },
+        "LedgerCheck": {
+          "index": {
+            "connect": "Connect",
+            "connectDescription": "Connect your Ledger harware wallet to your computer and press \"Connect\"",
+            "notSupportedDescription": "This network is not supported on Ledger hardware wallet. Please proceed with mnemonics or private key.",
+            "notSupportedTitle": "Not supported"
+          }
+        },
+        "aptos": {
+          "CoinList": {
+            "index": {
+              "addCoinButton": "Add coin",
+              "coin": "Coin"
+            }
+          },
+          "NativeChainCard": {
+            "index": {
+              "copied": "Copied",
+              "depositButton": "Deposit",
+              "networkError": "Network error",
+              "sendButton": "Send"
+            }
+          }
+        },
+        "bitcoin": {
+          "NativeChainCard": {
+            "index": {
+              "copied": "Copied",
+              "depositButton": "Deposit",
+              "mempoolFunded": "Pending Receive",
+              "mempoolSpent": "Pending Send",
+              "networkError": "Network error",
+              "sendButton": "Send"
+            }
+          }
+        },
+        "cosmos": {
+          "CoinList": {
+            "components": {
+              "TokenItem": {
+                "index": {
+                  "invalidBalance": "No available balance.",
+                  "networkError": "Network Error"
+                }
+              }
+            },
+            "index": {
+              "importTokenButton": "Import token"
+            }
+          },
+          "NFTList": {
+            "components": {
+              "NFTCardItem": {
+                "index": {
+                  "networkError": "Network Error"
+                }
+              }
+            },
+            "index": {
+              "importNFTButton": "Import NFTs"
+            }
+          },
+          "NativeChainCard": {
+            "index": {
+              "available": "Available",
+              "claimCommissionButton": "Claim Comm'n",
+              "claimRewardButton": "Claim Reward",
+              "copied": "Copied",
+              "delegated": "Delegated",
+              "depositButton": "Deposit",
+              "incentive": "Incentive",
+              "insufficientFeeAmount": "Insufficient fee",
+              "invalidCommissionAmount": "There is no commission to claim",
+              "invalidCommissionTx": "Fail to make commission tx",
+              "invalidRewardAmount": "There is no reward to claim",
+              "invalidRewardTx": "Fail to make reward tx",
+              "ledgerNotSupport": "Ledger does not support this function",
+              "networkError": "Network Error",
+              "reward": "Reward",
+              "sendButton": "Send",
+              "swapButton": "Swap",
+              "unbonding": "Unbonding",
+              "vesting": "Vesting"
+            }
+          },
+          "TerminatedNativeChainCard": {
+            "index": {
+              "copied": "Copied",
+              "depositButton": "Deposit",
+              "inactiveNetwork": "Inactive Network!",
+              "inactiveNetworkDescription": "This network is no longer operational",
+              "inactiveNetworkSubDescription": "Note that Cosmostation Wallet is showing archived data only.",
+              "sendButton": "Send"
+            }
+          }
+        },
+        "ethereum": {
+          "NFTList": {
+            "components": {
+              "NFTCardItem": {
+                "index": {
+                  "networkError": "Network Error"
+                }
+              }
+            },
+            "index": {
+              "importNFTButton": "Import NFTs",
+              "nft": "NFT"
+            }
+          },
+          "NativeChainCard": {
+            "index": {
+              "copied": "Copied",
+              "depositButton": "Deposit",
+              "networkError": "Network error",
+              "sendButton": "Send"
+            }
+          },
+          "TokenList": {
+            "components": {
+              "TokenItem": {
+                "index": {
+                  "invalidError": "Invalid token",
+                  "networkError": "Network error"
+                }
+              }
+            },
+            "index": {
+              "importTokenButton": "Import token",
+              "token": "Token"
+            }
+          }
+        },
+        "sui": {
+          "CoinList": {
+            "index": {
+              "coin": "Coin"
+            }
+          },
+          "NFTList": {
+            "index": {
+              "nft": "NFT"
+            }
+          },
+          "NativeChainCard": {
+            "index": {
+              "available": "Available",
+              "copied": "Copied",
+              "depositButton": "Deposit",
+              "earned": "Earned",
+              "networkError": "Network error",
+              "sendButton": "Send",
+              "staked": "Your Stake",
+              "swapButton": "Swap"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schema": {
+    "addChainForm": {
+      "chainName": {
+        "any": {
+          "invalid": "Already registered"
+        }
+      },
+      "coinType": {
+        "any": {
+          "invalid": "The input format is not valid"
+        }
+      },
+      "decimal": {
+        "base": "Please enter decimals"
+      },
+      "gasRate": {
+        "object": {
+          "and": "Please enter whole Gas Rate value"
+        }
+      },
+      "restUrl": {
+        "any": {
+          "invalid": "Already registered"
+        }
+      },
+      "type": {
+        "string": {
+          "any": {
+            "invalid": "Please enter 'ETHERMINT' or empty"
+          }
+        }
+      }
+    },
+    "addNetworkForm": {
+      "address": {
+        "string": {
+          "pattern": {
+            "base": "Must be entered in hexadecimal or decimal (eg. 0x1 or 1)"
+          }
+        }
+      }
+    },
+    "addressBookForm": {
+      "address": {
+        "string": {
+          "pattern": {
+            "base": "Invalid Address"
+          }
+        }
+      }
+    },
+    "changeNameForm": {
+      "name": {
+        "any": {
+          "invlid": "Please choose another name."
+        }
+      }
+    },
+    "changePasswordForm": {
+      "password": {
+        "any": {
+          "only": "The password does not match."
+        }
+      },
+      "repeatPassword": {
+        "any": {
+          "only": "The password confirmation does not match."
+        }
+      }
+    },
+    "common": {
+      "any": {
+        "required": "required"
+      },
+      "boolean": {
+        "base": "Please enter boolean."
+      },
+      "number": {
+        "base": "Please enter numbers.",
+        "empty": "Please enter numbers.",
+        "greater": "Please enter a number greater than {#limit}.",
+        "less": "Please enter a number less than {#limit}.",
+        "max": "Please enter a number less than {#limit}",
+        "min": "Please enter at least {#limit} or more numbers."
+      },
+      "string": {
+        "base": "Please enter characters.",
+        "empty": "required",
+        "max": "Please enter less than {#limit} characters.",
+        "min": "Please enter at least {#limit} or more characters."
+      }
+    },
+    "importTokenForm": {
+      "address": {
+        "string": {
+          "pattern": {
+            "base": "Invalid token address"
+          }
+        }
+      }
+    },
+    "ledgerForm": {
+      "name": {
+        "any": {
+          "invlid": "Please choose another name."
+        }
+      }
+    },
+    "mnemonicForm": {
+      "mnemonic": "mnemonic is invalid",
+      "name": {
+        "any": {
+          "invlid": "Please choose another name."
+        }
+      }
+    },
+    "passwordForm": {
+      "password": {
+        "any": {
+          "only": "The password does not match."
+        }
+      },
+      "repeatPassword": {
+        "any": {
+          "only": "The password confirmation does not match."
+        }
+      }
+    },
+    "privateKeyForm": {
+      "name": {
+        "any": {
+          "invlid": "Please choose another name."
+        }
+      },
+      "privateKey": "Private Key is invalid"
+    },
+    "restoreForm": {
+      "repeatPassword": {
+        "any": {
+          "only": "The password confirmation does not match."
+        }
+      },
+      "restoreString": {
+        "any": {
+          "only": "Recovery phrases do not match."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+npm-debug.log
+yarn-error.log
+node_modules/
+dist/
+dev/
+prod/
+tmp/
+build/
+.DS_Store

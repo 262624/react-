@@ -1,0 +1,6 @@
+*.js
+
+src/proto/*.js
+src/proto/*.ts
+
+.build/*
