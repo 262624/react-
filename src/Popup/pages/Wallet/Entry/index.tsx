@@ -5,6 +5,7 @@ import Bitcoin from './Bitcoin';
 import Cosmos from './Cosmos';
 import Ethereum from './Ethereum';
 import Sui from './Sui';
+import Solana from './Solana';
 // import Solana from './Solana';
 
 export default function Entry() {
@@ -31,6 +32,9 @@ export default function Entry() {
     return <Bitcoin chain={currentChain} />;
   }
 
+  if (currentChain.line === 'SOLANA') {
+    return <Solana chain={currentChain} />;
+  }
 
   return null;
 }

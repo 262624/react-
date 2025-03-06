@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import type { PopoverProps } from '@mui/material';
 import { Typography } from '@mui/material';
-
-import { APTOS_CHAINS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_CHAINS, SUI_CHAINS } from '~/constants/chain';
+// 修改
+import { APTOS_CHAINS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_CHAINS, SUI_CHAINS, SOLANA_CHAINS } from '~/constants/chain';
 import Divider from '~/Popup/components/common/Divider';
 import Popover from '~/Popup/components/common/Popover';
 import { useCurrentAptosNetwork } from '~/Popup/hooks/useCurrent/useCurrentAptosNetwork';
@@ -32,6 +32,8 @@ import {
 } from './styled';
 
 import SettingIcon24 from '~/images/icons/Setting24.svg';
+// 修改
+import { useCurrentSolanaNetworks } from '~/Popup/hooks/useCurrent/useCurrentSolanaNetworks';
 
 type ChainPopoverProps = Omit<PopoverProps, 'children'> & {
   currentChain: Chain;
@@ -53,6 +55,10 @@ export default function ChainPopover({ onClose, currentChain, onClickChain, isOn
   const { currentSuiNetwork, setCurrentSuiNetwork, removeSuiNetwork } = useCurrentSuiNetwork();
   const { currentShownSuiNetwork } = useCurrentShownSuiNetworks();
 
+  // 修改
+
+  const {showSolanaNetwork} = useCurrentSolanaNetworks();
+
   const { t } = useTranslation();
 
   const { allowedChainIds, additionalChains, additionalEthereumNetworks, additionalAptosNetworks, additionalSuiNetworks } = extensionStorage;
@@ -62,6 +68,10 @@ export default function ChainPopover({ onClose, currentChain, onClickChain, isOn
   const allowedAptosChain = useMemo(() => APTOS_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
   const allowedSuiChain = useMemo(() => SUI_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
   const allowedBitcoinChain = useMemo(() => BITCOIN_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
+  console.log(allowedSuiChain, 'allowedBitcoinChain');
+  // 修改
+  const allowedSolanaChain = useMemo(() => SOLANA_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
+  console.log(allowedSolanaChain, 'allowedSolanaChain');
 
   return (
     <Popover {...remainder} onClose={onClose}>
@@ -78,6 +88,52 @@ export default function ChainPopover({ onClose, currentChain, onClickChain, isOn
         </HeaderContainer>
         <Divider />
         <BodyContainer>
+          {/* 修改 */}
+
+          {allowedSolanaChain.length > 0 && (
+            <>
+              <ChainTitleContainer>
+                <Typography variant="h6">OPEN</Typography>
+              </ChainTitleContainer>
+              <ChainListContainer>
+                {allowedSolanaChain.map((chain) => {
+                  if (isOnlyChain) {
+                    return (
+                      <ChainItemButton
+                        key={chain.id}
+                        isActive={currentChain.id === chain.id}
+                        imgSrc={chain.imageURL}
+                        onClick={() => {
+                          onClickChain?.(chain);
+                          onClose?.({}, 'backdropClick');
+                        }}
+                      >
+                        {chain.chainName}
+                      </ChainItemButton>
+                    );
+                  };
+                  return [
+                    ...showSolanaNetwork.map((network) => (
+                      <ChainItemButton
+                        key={`${chain.id}-${network.id}`}
+                        isActive={currentChain.id === chain.id && currentEthereumNetwork.id === network.id}
+                        isBackgroundActive={currentEthereumNetwork.id === network.id}
+                        imgSrc={network.imageURL}
+                        onClick={async () => {
+                          await setCurrentEthereumNetwork(network);
+                          onClickChain?.(chain);
+                          onClose?.({}, 'backdropClick');
+                        }}
+                      >
+                        {network.networkName}
+                      </ChainItemButton>
+                    )),
+                  ];
+                })}
+              </ChainListContainer>
+            </>
+          )}
+
           {allowedEthereumChain.length > 0 && (
             <>
               <ChainTitleContainer>

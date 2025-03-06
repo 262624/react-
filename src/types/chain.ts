@@ -219,6 +219,7 @@ export type SolanaNetwork = {
   explorerURL?: string;
   coinGeckoId?: string;
   decimals: number;
+  chainId: string;
 };
 
 // Solana Token 类型

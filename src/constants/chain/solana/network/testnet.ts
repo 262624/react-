@@ -11,5 +11,6 @@ export const TESTNET: SolanaNetwork = {
   imageURL: solanaChainImg,
   explorerURL: 'https://explorer.solana.com/?cluster=testnet',
   coinGeckoId: 'solana',
-  decimals: 9
+  decimals: 9,
+  chainId:'102e'
 };

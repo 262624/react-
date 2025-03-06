@@ -12,4 +12,5 @@ export const MAINNET: SolanaNetwork = {
   explorerURL: 'https://explorer.solana.com',
   coinGeckoId: 'solana',
   decimals: 9,
+  chainId: '102x'
 };
