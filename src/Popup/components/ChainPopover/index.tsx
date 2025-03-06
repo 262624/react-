@@ -68,10 +68,10 @@ export default function ChainPopover({ onClose, currentChain, onClickChain, isOn
   const allowedAptosChain = useMemo(() => APTOS_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
   const allowedSuiChain = useMemo(() => SUI_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
   const allowedBitcoinChain = useMemo(() => BITCOIN_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
-  console.log(allowedSuiChain, 'allowedBitcoinChain');
+  // console.log(allowedSuiChain, 'allowedBitcoinChain');
   // 修改
   const allowedSolanaChain = useMemo(() => SOLANA_CHAINS.filter((chain) => allowedChainIds.includes(chain.id)), [allowedChainIds]);
-  console.log(allowedSolanaChain, 'allowedSolanaChain');
+  // console.log(allowedSolanaChain, 'allowedSolanaChain');
 
   return (
     <Popover {...remainder} onClose={onClose}>

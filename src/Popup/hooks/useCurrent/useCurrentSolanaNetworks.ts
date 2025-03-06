@@ -14,16 +14,16 @@ export function useCurrentSolanaNetworks() {
   const { selectedSolanaNetworkId, additionalSolanaNetworks, allowedOrigins,showSolanaNetworks } = extensionStorage;
 
   const allNetworks = [...SOLANA_NETWORKS, ...additionalSolanaNetworks];
-  console.log(SOLANA_NETWORKS);
-  console.log(showSolanaNetworks,'000---000');
+  // console.log(SOLANA_NETWORKS);
+  // console.log(showSolanaNetworks,'000---000');
   
   const showSolanaNetwork = SOLANA_NETWORKS.filter((network) => showSolanaNetworks.includes(network.id));
-  console.log(showSolanaNetwork,'000---000');
+  // console.log(showSolanaNetwork,'000---000');
   
   const currentAccountSelectedSolanaNetworkId = allNetworks.find((network) => network.id === selectedSolanaNetworkId)?.id ?? allNetworks[0].id;
 
   const currentSolanaNetwork = allNetworks.find((network) => network.id === currentAccountSelectedSolanaNetworkId)!;
-  console.log(currentSolanaNetwork,'currentSolanaNetwork');
+  // console.log(currentSolanaNetwork,'currentSolanaNetwork');
   
 
   const setCurrentSolanaNetwork = async (network: SolanaNetwork) => {

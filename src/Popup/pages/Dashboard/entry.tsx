@@ -75,7 +75,7 @@ export default function Entry() {
   const { navigate } = useNavigate();
 
   const chainList: ChainList = currentAllowedChains.map((chain) => ({ chain, amount: '0' }));
-  console.log(chainList, '--000--');
+  // console.log(chainList, '--000--');
 
   const cosmosChainList = chainList.filter(isCosmos);
   const ethereumChainList = chainList.filter(isEthereum);
@@ -90,11 +90,11 @@ export default function Entry() {
     ethereumChainList.length > 0 ? currentShownEthereumNetwork.filter((network) => !cosmosChainNames.includes(network.networkName)) : [];
   const aptosNetworkList = aptosChainList.length > 0 ? currentShownAptosNetwork : [];
   const suiNetworkList = suiChainList.length > 0 ? currentShownSuiNetwork : [];
-  console.log(suiNetworkList, '--suiNetworkList--');
+  // console.log(suiNetworkList, '--suiNetworkList--');
 
   // 修改
   const solanaNetworkList = solanaChainList.length > 0 ? showSolanaNetwork : [];
-  console.log(solanaNetworkList, '--solanaNetworkList--');
+  // console.log(solanaNetworkList, '--solanaNetworkList--');
 
   const chainCnt = cosmosChainList.length + ethereumNetworkList.length + aptosNetworkList.length + suiNetworkList.length + bitcoinChainList.length + solanaNetworkList.length;
 

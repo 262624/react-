@@ -10,7 +10,7 @@ import Solana from './Solana';
 
 export default function Entry() {
   const { currentChain } = useCurrentChain();
-  console.log('currentChain', currentChain);
+  // console.log('currentChain', currentChain);
 
   if (currentChain.line === 'COSMOS') {
     return <Cosmos chain={currentChain} />;

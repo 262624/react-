@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useSnackbar } from 'notistack';
 import { InputAdornment, Typography } from '@mui/material';
 
-import { APTOS_CHAINS, APTOS_NETWORKS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_CHAINS, ETHEREUM_NETWORKS, SUI_CHAINS, SUI_NETWORKS } from '~/constants/chain';
+import { APTOS_CHAINS, APTOS_NETWORKS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_CHAINS, ETHEREUM_NETWORKS, SOLANA_CHAINS, SOLANA_NETWORKS, SUI_CHAINS, SUI_NETWORKS } from '~/constants/chain';
 import { APTOS } from '~/constants/chain/aptos/aptos';
 import { ETHEREUM } from '~/constants/chain/ethereum/ethereum';
 import { SUI } from '~/constants/chain/sui/sui';
@@ -30,6 +30,8 @@ import {
   StyledInput,
   StyledSearch20Icon,
 } from './styled';
+import { SOLANA } from '~/constants/chain/solana/solana';
+import { useCurrentSolanaNetworks } from '~/Popup/hooks/useCurrent/useCurrentSolanaNetworks';
 
 export default function SelectChain() {
   const [search, setSearch] = useState('');
@@ -41,6 +43,8 @@ export default function SelectChain() {
   const { addShownEthereumNetworks, removeShownEthereumNetworks } = useCurrentShownEthereumNetworks();
   const { addShownAptosNetworks, removeShownAptosNetworks } = useCurrentShownAptosNetworks();
   const { addShownSuiNetworks, removeShownSuiNetworks } = useCurrentShownSuiNetworks();
+  // 修改
+  // const { addSolanaNetwork,removeSolanaNetwork} = useCurrentSolanaNetworks()
 
   const { extensionStorage } = useExtensionStorage();
 
@@ -51,6 +55,8 @@ export default function SelectChain() {
   const filteredAptosChains = search ? APTOS_CHAINS.filter((chain) => chain.chainName.toLowerCase().indexOf(search.toLowerCase()) > -1) : APTOS_CHAINS;
   const filteredSuiChains = search ? SUI_CHAINS.filter((chain) => chain.chainName.toLowerCase().indexOf(search.toLowerCase()) > -1) : SUI_CHAINS;
   const filteredBitcoinChains = search ? BITCOIN_CHAINS.filter((chain) => chain.chainName.toLowerCase().indexOf(search.toLowerCase()) > -1) : BITCOIN_CHAINS;
+  // 修改
+  const filteredOpenChains = search ? SOLANA_CHAINS.filter((chain) => chain.chainName.toLowerCase().indexOf(search.toLowerCase()) > -1) : SOLANA_CHAINS;
 
   const handleOnChange = async (checked: boolean, chain: Chain) => {
     if (checked) {
@@ -66,6 +72,10 @@ export default function SelectChain() {
 
       if (chain.id === SUI.id) {
         await addShownSuiNetworks(SUI_NETWORKS);
+      }
+      // 修改
+      if(chain.id === SOLANA.id){
+        // await addSolanaNetwork(SOLANA_NETWORKS);
       }
     } else if (allowedChainIds.length < 2) {
       enqueueSnackbar(t('pages.Account.Initialize.components.SelectChain.index.removeAllowedChainError'), { variant: 'error' });
