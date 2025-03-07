@@ -3,7 +3,7 @@ import { useSnackbar } from 'notistack';
 import { useDebounce } from 'use-debounce';
 import { InputAdornment, Typography } from '@mui/material';
 
-import { APTOS_NETWORKS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_NETWORKS, SUI_NETWORKS } from '~/constants/chain';
+import { APTOS_NETWORKS, BITCOIN_CHAINS, COSMOS_CHAINS, ETHEREUM_NETWORKS, SUI_NETWORKS,SOLANA_NETWORKS } from '~/constants/chain';
 import { APTOS } from '~/constants/chain/aptos/aptos';
 import { BITCOIN } from '~/constants/chain/bitcoin/bitcoin';
 import { COSMOS } from '~/constants/chain/cosmos/cosmos';
@@ -35,6 +35,7 @@ import {
 } from './styled';
 
 import NoResults16Icon from '~/images/icons/NoResults16.svg';
+import { SOLANA } from '~/constants/chain/solana/solana';
 
 export default function Entry() {
   const [search, setSearch] = useState('');
@@ -118,6 +119,15 @@ export default function Entry() {
       ? COSMOS_CHAINS.filter((chain) => chain.chainName.toLowerCase().indexOf(debouncedCloseSearch.toLowerCase()) > -1)
       : COSMOS_CHAINS;
   }, [debouncedCloseSearch, debouncedOpenSearch]);
+
+  // 修改
+  const filteredSolanaChains = useMemo(() => {
+  if (debouncedOpenSearch) {
+    return SOLANA.chainName.toLowerCase().indexOf(debouncedOpenSearch.toLowerCase()) > -1 ? SOLANA_NETWORKS : [];
+  }
+
+  return debouncedCloseSearch ? (SOLANA.chainName.toLowerCase().indexOf(debouncedCloseSearch.toLowerCase()) > -1 ? SOLANA_NETWORKS : []) : SOLANA_NETWORKS;
+}, [debouncedCloseSearch, debouncedOpenSearch]);
 
   const handleOnChangeChain = async (checked: boolean, chain: Chain) => {
     if (checked) {

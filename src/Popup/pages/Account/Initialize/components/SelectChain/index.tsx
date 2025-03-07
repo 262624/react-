@@ -32,6 +32,7 @@ import {
 } from './styled';
 import { SOLANA } from '~/constants/chain/solana/solana';
 import { useCurrentSolanaNetworks } from '~/Popup/hooks/useCurrent/useCurrentSolanaNetworks';
+import { useCurrentShownSolanaNetworks } from '~/Popup/hooks/useCurrent/useCurrentShowmSolana';
 
 export default function SelectChain() {
   const [search, setSearch] = useState('');
@@ -44,7 +45,7 @@ export default function SelectChain() {
   const { addShownAptosNetworks, removeShownAptosNetworks } = useCurrentShownAptosNetworks();
   const { addShownSuiNetworks, removeShownSuiNetworks } = useCurrentShownSuiNetworks();
   // 修改
-  // const { addSolanaNetwork,removeSolanaNetwork} = useCurrentSolanaNetworks()
+  const { addShownSolanaNetworks,removeShownSolanaNetworks} = useCurrentShownSolanaNetworks()
 
   const { extensionStorage } = useExtensionStorage();
 
@@ -75,7 +76,7 @@ export default function SelectChain() {
       }
       // 修改
       if(chain.id === SOLANA.id){
-        // await addSolanaNetwork(SOLANA_NETWORKS);
+        await addShownSolanaNetworks(SOLANA_NETWORKS);
       }
     } else if (allowedChainIds.length < 2) {
       enqueueSnackbar(t('pages.Account.Initialize.components.SelectChain.index.removeAllowedChainError'), { variant: 'error' });
@@ -92,6 +93,10 @@ export default function SelectChain() {
 
       if (chain.id === SUI.id) {
         await removeShownSuiNetworks(SUI_NETWORKS);
+      }
+
+      if(chain.id === SOLANA.id){
+        await removeShownSolanaNetworks(SOLANA_NETWORKS);
       }
     }
   };
@@ -110,6 +115,20 @@ export default function SelectChain() {
       />
       <ChainContainer>
         <ListContainer>
+        {filteredOpenChains.map((chain) => (
+            <Item
+              key={chain.id}
+              imageProps={{ alt: chain.chainName, src: chain.imageURL }}
+              switchProps={{
+                checked: allowedChainIds.includes(chain.id),
+                onChange: (_, checked) => {
+                  void handleOnChange(checked, chain);
+                },
+              }}
+            >
+              {chain.chainName}
+            </Item>
+          ))}
           {filteredEthereumChains.map((chain) => (
             <Item
               key={chain.id}
